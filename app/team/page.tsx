@@ -27,9 +27,9 @@ export default function Team() {
             </p>
           </div>
 
-            {/* Co-founder (Shagun) */}
+          {/* Co-founder (Shagun) */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Team Member 1 */}
+            {/* Co-founder (Shagun) */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
               <div className="aspect-w-1 aspect-h-1">
                 <Image
@@ -41,7 +41,7 @@ export default function Team() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-1"> Shagun Gupta</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">Shagun Gupta</h3>
                 <p className="text-purple-600 font-medium mb-3">Co-Founder</p>
                 <p className="text-gray-700 mb-4">
                   High school student passionate about making STEM education accessible to all students. Enjoys robotics
@@ -63,14 +63,13 @@ export default function Team() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Miriam Sabri</h3>
-                <p className="text-yellow-500 font-medium mb-3">Co-Founder</p>
+                <p className="text-green-500 font-medium mb-3">Co-Founder</p>
                 <p className="text-gray-700 mb-4">
                   High school student passionate about making STEM education accessible to all students. Enjoys robotics
                   and computer science.
                 </p>
               </div>
             </div>
-          </div>
 
             {/* Team Member 6 */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
@@ -85,9 +84,10 @@ export default function Team() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Lily Wan</h3>
-                <p className="text-yellow-500 font-medium mb-3">Social Media Manages</p>
+                <p className="text-yellow-500 font-medium mb-3">Social Media Manager</p>
                 <p className="text-gray-700 mb-4">
-                  High school student interested in technology and coding. Manages our website and social media presence.
+                  High school student interested in technology and coding. Manages our website and social media
+                  presence.
                 </p>
               </div>
             </div>

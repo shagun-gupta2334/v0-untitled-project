@@ -243,7 +243,7 @@ export default function Activities() {
                   <div className="col-span-3">Camp End & Closing Circle</div>
                 </div>
                 <div className="grid grid-cols-4 gap-4 items-center">
-                  <div className="font-bold text-blue-600">1:30 PM</div>
+                  <div className="font-bold text-blue-600">1:05 PM</div>
                   <div className="col-span-3">Pick-up</div>
                 </div>
               </div>
