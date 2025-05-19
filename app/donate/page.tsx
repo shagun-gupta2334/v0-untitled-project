@@ -6,7 +6,7 @@ export default function Donate() {
   return (
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      <section className="bg-green-600 py-20 text-white">
+      <section className="bg-purple-600 py-20 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Support Our Mission</h1>

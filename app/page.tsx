@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-blue-600 to-purple-700 py-20 text-white">
+      <section className="relative bg-gradient-to-b from-yellow-600 to-red-700 py-20 text-white">
         <div className="container mx-auto px-4 py-12 md:py-24">
           <div className="grid gap-8 md:grid-cols-2 items-center">
             <div className="space-y-6">
@@ -138,7 +138,7 @@ export default function Home() {
             </div>
 
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="h-48 bg-blue-600 flex items-center justify-center">
+              <div className="h-48 bg-green-600 flex items-center justify-center">
                 <Lightbulb className="h-16 w-16 text-white" />
               </div>
               <div className="p-6">
