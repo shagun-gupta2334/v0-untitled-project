@@ -50,7 +50,7 @@ export default function Contact() {
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:underline"
                     >
-                      @sparkforstem
+                      @Sparkforstem@gmail.com
                     </a>
                   </div>
                 </div>

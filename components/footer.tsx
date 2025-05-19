@@ -54,6 +54,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/donate" className="text-gray-400 hover:text-yellow-400 transition-colors">
+                  Donate
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" className="text-gray-400 hover:text-yellow-400 transition-colors">
                   Contact
                 </Link>
@@ -71,11 +76,22 @@ const Footer = () => {
             >
               Register Now
             </Link>
+            <div className="mt-4">
+              <Link
+                href="/donate"
+                className="inline-block bg-green-500 hover:bg-green-600 text-white font-medium px-4 py-2 rounded-md transition-colors"
+              >
+                Support Our Camp
+              </Link>
+            </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Spark for STEM. All rights reserved. AI was used in making of this website.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Spark for STEM. All rights reserved. AI was used in making of this
+            website.
+          </p>
         </div>
       </div>
     </footer>

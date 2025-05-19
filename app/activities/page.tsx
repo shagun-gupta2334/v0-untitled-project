@@ -30,7 +30,7 @@ export default function Activities() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Activity 1 */}
+            {/* Chemistry Experiments */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
               <div className="h-48 bg-blue-600 flex items-center justify-center">
                 <Beaker className="h-16 w-16 text-white" />
@@ -58,7 +58,7 @@ export default function Activities() {
               </div>
             </div>
 
-            {/* Activity 2 */}
+            {/* Engineering Projects */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
               <div className="h-48 bg-purple-600 flex items-center justify-center">
                 <PuzzlePiece className="h-16 w-16 text-white" />
@@ -86,7 +86,7 @@ export default function Activities() {
               </div>
             </div>
 
-            {/* Activity 3 */}
+            {/* Coding & Robotics */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
               <div className="h-48 bg-yellow-400 flex items-center justify-center">
                 <Code className="h-16 w-16 text-white" />
@@ -114,7 +114,7 @@ export default function Activities() {
               </div>
             </div>
 
-            {/* Activity 4 */}
+            {/* Problem-Solving Games */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
               <div className="h-48 bg-blue-600 flex items-center justify-center">
                 <Lightbulb className="h-16 w-16 text-white" />
@@ -137,62 +137,6 @@ export default function Activities() {
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">•</span>
                     <span>Creative problem-solving</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Activity 5 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
-              <div className="h-48 bg-purple-600 flex items-center justify-center">
-                <Rocket className="h-16 w-16 text-white" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Rocket Science</h3>
-                <p className="text-gray-700 mb-4">
-                  Learn about physics and aerodynamics by designing and launching simple rockets. Students will explore
-                  the principles of flight and propulsion.
-                </p>
-                <ul className="text-gray-700 mb-4">
-                  <li className="flex items-start mb-2">
-                    <span className="text-purple-600 mr-2">•</span>
-                    <span>Paper rocket design</span>
-                  </li>
-                  <li className="flex items-start mb-2">
-                    <span className="text-purple-600 mr-2">•</span>
-                    <span>Balloon-powered rockets</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-purple-600 mr-2">•</span>
-                    <span>Learning about Newton's laws</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Activity 6 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
-              <div className="h-48 bg-yellow-400 flex items-center justify-center">
-                <Brain className="h-16 w-16 text-white" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Math Games</h3>
-                <p className="text-gray-700 mb-4">
-                  Fun activities that make math engaging and interactive. Students will develop mathematical thinking
-                  through games and puzzles.
-                </p>
-                <ul className="text-gray-700 mb-4">
-                  <li className="flex items-start mb-2">
-                    <span className="text-yellow-500 mr-2">•</span>
-                    <span>Math-based board games</span>
-                  </li>
-                  <li className="flex items-start mb-2">
-                    <span className="text-yellow-500 mr-2">•</span>
-                    <span>Pattern recognition activities</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-yellow-500 mr-2">•</span>
-                    <span>Geometric art projects</span>
                   </li>
                 </ul>
               </div>
@@ -243,7 +187,7 @@ export default function Activities() {
                   <div className="col-span-3">Camp End & Closing Circle</div>
                 </div>
                 <div className="grid grid-cols-4 gap-4 items-center">
-                  <div className="font-bold text-blue-600">1:05 PM</div>
+                  <div className="font-bold text-blue-600">1:00 PM</div>
                   <div className="col-span-3">Pick-up</div>
                 </div>
               </div>
