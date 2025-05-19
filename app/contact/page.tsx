@@ -1,5 +1,4 @@
 "use client"
-
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Mail, MessageSquare, Instagram } from "lucide-react"
@@ -25,7 +24,7 @@ export default function Contact() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Get in Touch</h2>
               <p className="text-lg text-gray-700 mb-8">
                 Whether you have questions about registration, camp activities, or want to learn more about our program,
-                we're here to help. Feel free to reach out to us via email or social media.
+                we're here to help. Fill out the form and our team will get back to you as soon as possible.
               </p>
 
               <div className="space-y-6">
@@ -35,11 +34,7 @@ export default function Contact() {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-gray-900">Email Us</h3>
-                    <p className="text-gray-700">
-                      <a href="mailto:Sparkforstem@gmail.com" className="text-blue-600 hover:underline">
-                        Sparkforstem@gmail.com
-                      </a>
-                    </p>
+                    <p className="text-gray-700">Sparkforstem@gmail.com</p>
                   </div>
                 </div>
 
@@ -126,15 +121,14 @@ export default function Contact() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Can parents volunteer at the camp?</h3>
                 <p className="text-gray-700">
-                  We welcome parent volunteers. Please contact us for more information on how you can help.
+                No — Spark for STEM is a student-led camp run by trained high school volunteers. We kindly ask that parents remain off-site during the camp to maintain a comfortable, peer-led environment for the kids.
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">How can I support Spark for STEM?</h3>
                 <p className="text-gray-700">
-                  We appreciate your support! You can help by spreading the word about our camp, volunteering, or
-                  donating supplies. Contact us for more details.
+                  We’re grateful for any support! You can help by donating funds, supplies, to keep the camp running smoothly. Every contribution helps us keep the camp free and full of hands-on STEM fun.
                 </p>
               </div>
             </div>

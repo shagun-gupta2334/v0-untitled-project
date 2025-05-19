@@ -76,7 +76,7 @@ export default function Register() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Who can attend the camp?</h3>
                 <p className="text-gray-700">
-                  Our camp is designed for students ages 8-14. All skill levels are welcome!
+                  Our camp is designed for elementary school students (grades 1-5). All skill levels are welcome!
                 </p>
               </div>
 
@@ -91,7 +91,7 @@ export default function Register() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">What should my child bring to camp?</h3>
                 <p className="text-gray-700">
-                  Students should bring a packed snack water bottle, and their curiosity! All materials for activities
+                  Students should bring a packed snack, water bottle, and their curiosity! All materials for activities
                   will be provided.
                 </p>
               </div>
@@ -99,8 +99,7 @@ export default function Register() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">How long is the camp?</h3>
                 <p className="text-gray-700">
-                  Our camp runs for one weekend, August 9- August 10, from 11:00 AM to 1:00 PM each day, with drop offs
-                  starting at 10:30 AM and pick-up until 1:30 PM.
+                  Our camp runs for one weekend, from 11:00 AM to 1:00 PM each day.
                 </p>
               </div>
 
