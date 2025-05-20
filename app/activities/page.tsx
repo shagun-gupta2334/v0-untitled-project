@@ -1,6 +1,7 @@
+import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Beaker, Code, Lightbulb, PuzzleIcon as PuzzlePiece, Rocket, Brain } from "lucide-react"
+import { ArrowRight, Code, Lightbulb, PuzzleIcon as PuzzlePiece, Leaf } from "lucide-react"
 
 export default function Activities() {
   return (
@@ -18,7 +19,7 @@ export default function Activities() {
         </div>
       </section>
 
-      {/* Activities Grid */}
+      {/* Featured Activity */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -29,12 +30,64 @@ export default function Activities() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Chemistry Experiments */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
-              <div className="h-48 bg-blue-600 flex items-center justify-center">
-                <Beaker className="h-16 w-16 text-white" />
+          <div className="max-w-5xl mx-auto mb-16">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
+              <div className="grid md:grid-cols-2">
+                <div className="h-full">
+                  <Image
+                    src="/images/stem-solar-activity.jpeg"
+                    alt="Students learning about solar energy"
+                    width={600}
+                    height={450}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-8">
+                  <div className="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
+                    Featured Activity
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Renewable Energy Exploration</h3>
+                  <p className="text-gray-700 mb-6">
+                    Students discover the power of renewable energy through hands-on experiments with solar panels,
+                    learning how sunlight can be converted into electricity to power various devices. This outdoor
+                    activity combines science, technology, and environmental awareness.
+                  </p>
+                  <ul className="space-y-3 text-gray-700 mb-6">
+                    <li className="flex items-start">
+                      <span className="text-green-500 mr-2">•</span>
+                      <span>Build simple solar-powered circuits</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-green-500 mr-2">•</span>
+                      <span>Learn about sustainable energy sources</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-green-500 mr-2">•</span>
+                      <span>Test different conditions to maximize energy output</span>
+                    </li>
+                  </ul>
+                  <div className="flex items-center text-sm text-gray-500">
+                    <Leaf className="h-4 w-4 mr-1" />
+                    <span>Outdoor Activity</span>
+                    <span className="mx-2">•</span>
+                    <span>Ages 8-14</span>
+                    <span className="mx-2">•</span>
+                    <span>45 minutes</span>
+                  </div>
+                </div>
               </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+              <Image
+                src="/images/stem-chemistry-illustration.png"
+                alt="Chemistry experiments"
+                width={600}
+                height={400}
+                className="w-full h-64 object-cover"
+              />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Chemistry Experiments</h3>
                 <p className="text-gray-700 mb-4">
@@ -58,6 +111,39 @@ export default function Activities() {
               </div>
             </div>
 
+            <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+              <Image
+                src="/images/stem-activities-group.png"
+                alt="STEM group activities"
+                width={600}
+                height={400}
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Collaborative STEM Projects</h3>
+                <p className="text-gray-700 mb-4">
+                  Students work together on exciting projects that combine multiple STEM disciplines. From building and
+                  programming robots to conducting experiments and constructing models.
+                </p>
+                <ul className="text-gray-700 mb-4">
+                  <li className="flex items-start mb-2">
+                    <span className="text-purple-600 mr-2">•</span>
+                    <span>Robotics programming</span>
+                  </li>
+                  <li className="flex items-start mb-2">
+                    <span className="text-purple-600 mr-2">•</span>
+                    <span>Structural engineering challenges</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-purple-600 mr-2">•</span>
+                    <span>Team-based problem solving</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Engineering Projects */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
               <div className="h-48 bg-purple-600 flex items-center justify-center">
@@ -187,7 +273,7 @@ export default function Activities() {
                   <div className="col-span-3">Camp End & Closing Circle</div>
                 </div>
                 <div className="grid grid-cols-4 gap-4 items-center">
-                  <div className="font-bold text-blue-600">1:00 PM</div>
+                  <div className="font-bold text-blue-600">1:05 PM</div>
                   <div className="col-span-3">Pick-up</div>
                 </div>
               </div>

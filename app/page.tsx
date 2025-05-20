@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-yellow-600 to-red-700 py-20 text-white">
+      <section className="relative bg-gradient-to-b from-blue-600 to-purple-700 py-20 text-white">
         <div className="container mx-auto px-4 py-12 md:py-24">
           <div className="grid gap-8 md:grid-cols-2 items-center">
             <div className="space-y-6">
@@ -26,11 +26,11 @@ export default function Home() {
             </div>
             <div className="flex justify-center">
               <Image
-                src="/images/hero-illustration.svg"
-                alt="STEM activities illustration"
+                src="/images/stem-chemistry-illustration.png"
+                alt="Students engaged in STEM chemistry experiment"
                 width={500}
                 height={400}
-                className="drop-shadow-lg"
+                className="rounded-lg drop-shadow-lg"
                 priority
               />
             </div>
@@ -52,6 +52,31 @@ export default function Home() {
               We are hosting a free STEM-focused summer camp for elementary schoolers, run by high school students. The
               camp introduces STEM principles through guided, hands-on activities.
             </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div className="order-2 md:order-1">
+              <Image
+                src="/images/stem-solar-activity.jpeg"
+                alt="Students learning about solar energy"
+                width={600}
+                height={450}
+                className="rounded-lg shadow-lg"
+              />
+            </div>
+            <div className="order-1 md:order-2">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Learning Through Discovery</h3>
+              <p className="text-lg text-gray-700 mb-6">
+                At Spark for STEM, we believe that the best way to learn is by doing. Our camp provides a supportive
+                environment where students can explore STEM concepts through hands-on activities, both indoors and
+                outdoors.
+              </p>
+              <p className="text-lg text-gray-700">
+                From building solar-powered circuits to conducting chemistry experiments, our activities are designed to
+                spark curiosity and foster a love for learning. Students will work collaboratively, think critically,
+                and develop problem-solving skills that will benefit them throughout their academic journey.
+              </p>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mt-12">

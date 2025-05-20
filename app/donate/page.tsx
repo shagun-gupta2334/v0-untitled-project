@@ -1,6 +1,7 @@
+import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Heart } from "lucide-react"
+import { ArrowRight, Heart, Share2 } from "lucide-react"
 
 export default function Donate() {
   return (
@@ -27,7 +28,7 @@ export default function Donate() {
               <p className="text-lg text-gray-700">
                 Spark for STEM is committed to providing free, high-quality STEM education to elementary school
                 students. Your donation helps us purchase materials, secure venues, and ensure our camp remains
-                accessible to all children regardless of their financial background.
+                accessible to ALL children regardless of their financial background.
               </p>
             </div>
 
@@ -74,6 +75,16 @@ export default function Donate() {
               </div>
             </div>
 
+            <div className="mb-12">
+              <Image
+                src="/images/stem-activities-group.png"
+                alt="Students engaged in STEM activities"
+                width={800}
+                height={500}
+                className="rounded-lg shadow-lg w-full"
+              />
+            </div>
+
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="aspect-w-16 aspect-h-9 relative h-[400px]">
                 <iframe
@@ -105,18 +116,6 @@ export default function Donate() {
 
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Volunteer Your Time</h3>
-                <p className="text-gray-700 mb-4">
-                  If you have expertise in STEM fields or simply want to help, consider volunteering at our camp.
-                </p>
-                <Link href="/contact">
-                  <Button variant="outline" className="w-full">
-                    Contact Us to Volunteer
-                  </Button>
-                </Link>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Donate Supplies</h3>
                 <p className="text-gray-700 mb-4">
                   We welcome donations of materials and supplies for our hands-on activities.
@@ -124,6 +123,32 @@ export default function Donate() {
                 <Link href="/contact">
                   <Button variant="outline" className="w-full">
                     Contact Us About Supplies
+                  </Button>
+                </Link>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Promotion & Awareness</h3>
+                <p className="text-gray-700 mb-4">
+                  Help spread the word about our camp to reach more students and potential supporters.
+                </p>
+                <ul className="text-gray-700 mb-4 space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-blue-500 mr-2">•</span>
+                    <span>Share our camp info on social media (Instagram, Facebook, local groups)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-500 mr-2">•</span>
+                    <span>Recommend us to local families or schools</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-500 mr-2">•</span>
+                    <span>Introduce us to potential sponsors or donors</span>
+                  </li>
+                </ul>
+                <Link href="/contact">
+                  <Button variant="outline" className="w-full flex items-center justify-center">
+                    <Share2 className="mr-2 h-4 w-4" /> Help Spread the Word
                   </Button>
                 </Link>
               </div>

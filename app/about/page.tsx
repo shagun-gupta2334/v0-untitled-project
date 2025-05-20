@@ -36,7 +36,7 @@ export default function About() {
             </div>
             <div className="flex justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=500"
+                src="/images/stem-activities-group.png"
                 alt="Students engaged in STEM activities"
                 width={500}
                 height={400}
@@ -89,7 +89,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 flex justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=500"
+                src="/images/stem-chemistry-illustration.png"
                 alt="STEM learning approach"
                 width={500}
                 height={400}
@@ -99,7 +99,8 @@ export default function About() {
             <div className="order-1 md:order-2">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Camp Details</h2>
               <p className="text-lg text-gray-700 mb-6">
-                Here’s everything you need to know about Spark for STEM, including dates, times, location, and important information for parents and guardians.
+                Here's everything you need to know about Spark for STEM, including dates, times, location, and important
+                information for parents and guardians.
               </p>
               <ul className="space-y-4 text-lg text-gray-700">
                 <li className="flex items-start">
@@ -108,7 +109,7 @@ export default function About() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">•</span>
-                  <span>Time: 11:00 AM – 1:00 PM (drop-off starts at 10:30 AM)</span>
+                  <span>Time: 11:00 AM – 1:00 PM (drop-off starts at 10:45 AM)</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">•</span>
