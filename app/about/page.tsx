@@ -109,7 +109,7 @@ export default function About() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">•</span>
-                  <span>Time: 11:00 AM – 1:00 PM (drop-off starts at 10:45 AM)</span>
+                  <span>Time: 11:00 AM – 1:00 PM (drop-off starts at 10:30 AM)</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">•</span>

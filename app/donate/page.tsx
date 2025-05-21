@@ -28,7 +28,7 @@ export default function Donate() {
               <p className="text-lg text-gray-700">
                 Spark for STEM is committed to providing free, high-quality STEM education to elementary school
                 students. Your donation helps us purchase materials, secure venues, and ensure our camp remains
-                accessible to ALL children regardless of their financial background.
+                accessible to all children regardless of their financial background.
               </p>
             </div>
 
@@ -39,15 +39,19 @@ export default function Donate() {
                   <ul className="space-y-3 text-gray-700">
                     <li className="flex items-start">
                       <span className="text-green-500 mr-2">•</span>
-                      <span>$25 provides materials for one student</span>
+                      <span>$160 provides materials for all campers, including science kits and project supplies</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-green-500 mr-2">•</span>
-                      <span>$100 sponsors a full camp experience for one child</span>
+                      <span>$140 goes toward basic robotics and coding tools for interactive tech activities</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-green-500 mr-2">•</span>
-                      <span>$500 helps us secure a venue for our activities</span>
+                      <span>$140 helps us secure a venue for our activities</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-green-500 mr-2">•</span>
+                      <span>$60 supports snacks, certificates, and souvenirs for the campers</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-green-500 mr-2">•</span>
