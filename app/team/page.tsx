@@ -92,18 +92,6 @@ export default function Team() {
               </div>
             </div>
           </div>
-
-          <div className="text-center mt-12">
-            <p className="text-lg text-gray-700 mb-6">
-              Want to join our team as a volunteer or mentor? We're always looking for passionate individuals to help
-              inspire the next generation of STEM leaders!
-            </p>
-            <Link href="/contact">
-              <Button className="bg-blue-600 hover:bg-blue-700">
-                Contact Us <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
-          </div>
         </div>
       </section>
 
