@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Instagram } from "lucide-react"
+import { Instagram, Facebook } from "lucide-react"
 
 const Footer = () => {
   return (
@@ -22,9 +22,20 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-yellow-400 transition-colors"
+                aria-label="Instagram"
               >
                 <Instagram className="h-6 w-6" />
                 <span className="sr-only">Instagram</span>
+              </a>
+              <a
+                href="https://www.facebook.com/spark.forstem/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-yellow-400 transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-6 w-6" />
+                <span className="sr-only">Facebook</span>
               </a>
             </div>
           </div>
