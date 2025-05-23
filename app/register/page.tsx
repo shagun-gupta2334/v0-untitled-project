@@ -74,13 +74,6 @@ export default function Register() {
 
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Who can attend the camp?</h3>
-                <p className="text-gray-700">
-                  Our camp is designed for elementary school students (grades 1-5). All skill levels are welcome!
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Is the camp really free?</h3>
                 <p className="text-gray-700">
                   Yes! Spark for STEM is completely free for all participants. We are a nonprofit, student-led
@@ -98,9 +91,7 @@ export default function Register() {
 
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">How long is the camp?</h3>
-                <p className="text-gray-700">
-                  Our camp runs for one weekend, from 11:00 AM to 1:00 PM each day.
-                </p>
+                <p className="text-gray-700">Our camp runs for one weekend, from 11:00 AM to 1:00 PM each day.</p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">

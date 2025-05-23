@@ -171,8 +171,7 @@ export default function Contact() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Can parents volunteer at the camp?</h3>
                 <p className="text-gray-700">
-                  No — Spark for STEM is a student-led camp run by trained high school volunteers. We kindly ask that
-                  parents remain off-site during the camp to maintain a comfortable, peer-led environment for the kids.
+                  No — Spark for STEM is a student-led camp run by trained high school volunteers.
                 </p>
               </div>
 

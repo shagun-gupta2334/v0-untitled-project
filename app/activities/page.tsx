@@ -30,55 +30,6 @@ export default function Activities() {
             </p>
           </div>
 
-          <div className="max-w-5xl mx-auto mb-16">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
-              <div className="grid md:grid-cols-2">
-                <div className="h-full">
-                  <Image
-                    src="/images/stem-solar-activity.jpeg"
-                    alt="Students learning about solar energy"
-                    width={600}
-                    height={450}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-8">
-                  <div className="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
-                    Featured Activity
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Renewable Energy Exploration</h3>
-                  <p className="text-gray-700 mb-6">
-                    Students discover the power of renewable energy through hands-on experiments with solar panels,
-                    learning how sunlight can be converted into electricity to power various devices. This outdoor
-                    activity combines science, technology, and environmental awareness.
-                  </p>
-                  <ul className="space-y-3 text-gray-700 mb-6">
-                    <li className="flex items-start">
-                      <span className="text-green-500 mr-2">•</span>
-                      <span>Build simple solar-powered circuits</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-green-500 mr-2">•</span>
-                      <span>Learn about sustainable energy sources</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-green-500 mr-2">•</span>
-                      <span>Test different conditions to maximize energy output</span>
-                    </li>
-                  </ul>
-                  <div className="flex items-center text-sm text-gray-500">
-                    <Leaf className="h-4 w-4 mr-1" />
-                    <span>Outdoor Activity</span>
-                    <span className="mx-2">•</span>
-                    <span>Ages 8-14</span>
-                    <span className="mx-2">•</span>
-                    <span>45 minutes</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
               <Image
@@ -273,7 +224,7 @@ export default function Activities() {
                   <div className="col-span-3">Camp End & Closing Circle</div>
                 </div>
                 <div className="grid grid-cols-4 gap-4 items-center">
-                  <div className="font-bold text-blue-600">1:05 PM</div>
+                  <div className="font-bold text-blue-600">1:00 PM</div>
                   <div className="col-span-3">Pick-up</div>
                 </div>
               </div>
