@@ -57,14 +57,13 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="flex-shrink-0 mt-1">
                     <MapPin className="h-6 w-6 text-blue-600" />
                   </div>
                   <div className="ml-4">
-                    <h3 className="text-lg font-medium text-gray-900">Camp Location (International</h3>
-                    <p className="text-gray-700">Google Meet (Invite will be scedualed)</p>
+                    <h3 className="text-lg font-medium text-gray-900">Camp Location (International)</h3>
+                    <p className="text-gray-700">Google Meet (Invite will be scheduled)</p>
                   </div>
                 </div>
 
