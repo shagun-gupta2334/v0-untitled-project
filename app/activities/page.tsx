@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Code, Lightbulb, PuzzleIcon as PuzzlePiece, Leaf } from "lucide-react"
+import { ArrowRight, Code, Lightbulb, PuzzleIcon as PuzzlePiece, Globe } from "lucide-react"
 
 export default function Activities() {
   return (
@@ -32,13 +32,6 @@ export default function Activities() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
-              <Image
-                src="/images/stem-chemistry-illustration.png"
-                alt="Chemistry experiments"
-                width={600}
-                height={400}
-                className="w-full h-64 object-cover"
-              />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Chemistry Experiments</h3>
                 <p className="text-gray-700 mb-4">
@@ -63,13 +56,6 @@ export default function Activities() {
             </div>
 
             <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
-              <Image
-                src="/images/stem-activities-group.png"
-                alt="STEM group activities"
-                width={600}
-                height={400}
-                className="w-full h-64 object-cover"
-              />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Collaborative STEM Projects</h3>
                 <p className="text-gray-700 mb-4">
@@ -224,7 +210,7 @@ export default function Activities() {
                   <div className="col-span-3">Camp End & Closing Circle</div>
                 </div>
                 <div className="grid grid-cols-4 gap-4 items-center">
-                  <div className="font-bold text-blue-600">1:00 PM</div>
+                  <div className="font-bold text-blue-600">1:05 PM</div>
                   <div className="col-span-3">Pick-up</div>
                 </div>
               </div>
@@ -240,11 +226,22 @@ export default function Activities() {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Registration is now open for our free summer camp. Spaces are limited, so sign up today!
           </p>
-          <Link href="/register">
-            <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6">
-              Register Now <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/register">
+              <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6">
+                Register Now <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+            <Link href="/global/about">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-black hover:bg-white hover:text-blue-600 font-bold text-lg px-8 py-6"
+              >
+                Register - Out of USA <Globe className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
     </main>

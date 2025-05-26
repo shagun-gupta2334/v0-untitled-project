@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Mail, MapPin, Instagram, Facebook } from "lucide-react"
+import { ArrowRight, Mail, MapPin, Instagram, Facebook, Globe } from "lucide-react"
 
 export default function Contact() {
   return (
@@ -43,7 +43,7 @@ export default function Contact() {
                     <MapPin className="h-6 w-6 text-blue-600" />
                   </div>
                   <div className="ml-4">
-                    <h3 className="text-lg font-medium text-gray-900">Camp Location</h3>
+                    <h3 className="text-lg font-medium text-gray-900">Camp Location (National)</h3>
                     <a
                       href="https://www.google.com/maps/place/The+Roudenbush+Community+Center,+Inc/@42.5831587,-71.438312,17z/"
                       target="_blank"
@@ -54,6 +54,17 @@ export default function Contact() {
                       <br />
                       65 Main Street, Westford, MA 01886
                     </a>
+                  </div>
+                </div>
+
+                <div className="space-y-6">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <MapPin className="h-6 w-6 text-blue-600" />
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-lg font-medium text-gray-900">Camp Location (International</h3>
+                    <p className="text-gray-700">Google Meet (Invite will be scedualed)</p>
                   </div>
                 </div>
 
@@ -178,8 +189,9 @@ export default function Contact() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">How can I support Spark for STEM?</h3>
                 <p className="text-gray-700">
-                  We're grateful for any support! You can help by donating funds, supplies, to keep the camp running
-                  smoothly. Every contribution helps us keep the camp free and full of hands-on STEM fun.
+                  We're grateful for any support! You can support us by donating supplies, sponsoring materials,
+                  contributing to our GoFundMe, or even tell other potential sponsors. Every little bit helps keep our
+                  camp free and fun!
                 </p>
               </div>
             </div>
@@ -194,11 +206,22 @@ export default function Contact() {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Registration is now open for our free summer camp. Spaces are limited, so sign up today!
           </p>
-          <Link href="/register">
-            <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6">
-              Register Now <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/register">
+              <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6">
+                Register Now <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+            <Link href="/global/about">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-black hover:bg-white hover:text-blue-600 font-bold text-lg px-8 py-6"
+              >
+                Register - Out of USA <Globe className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
     </main>

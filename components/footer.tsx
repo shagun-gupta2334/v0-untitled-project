@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Instagram, Facebook } from "lucide-react"
+import { Instagram, Facebook, Globe } from "lucide-react"
 
 const Footer = () => {
   return (
@@ -81,12 +81,21 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Join Us</h3>
             <p className="text-gray-400 mb-4">Registration is now open for our free summer camp. Spaces are limited!</p>
-            <Link
-              href="/register"
-              className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-medium px-4 py-2 rounded-md transition-colors"
-            >
-              Register Now
-            </Link>
+            <div className="space-y-3">
+              <Link
+                href="/register"
+                className="block bg-yellow-400 hover:bg-yellow-500 text-black font-medium px-4 py-2 rounded-md transition-colors text-center"
+              >
+                Register Now
+              </Link>
+              <Link
+                href="/global/about"
+                className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-md transition-colors"
+              >
+                <Globe className="mr-2 h-4 w-4" />
+                Register - Out of USA
+              </Link>
+            </div>
             <div className="mt-4">
               <Link
                 href="/donate"

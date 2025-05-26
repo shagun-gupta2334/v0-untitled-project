@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, MapPin } from "lucide-react"
+import { ArrowRight, MapPin, Globe } from "lucide-react"
 
 export default function About() {
   return (
@@ -155,11 +155,22 @@ export default function About() {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Registration is now open for our free summer camp. Spaces are limited, so sign up today!
           </p>
-          <Link href="/register">
-            <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6">
-              Register Now <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/register">
+              <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6">
+                Register Now <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+            <Link href="/global/about">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-black hover:bg-white hover:text-blue-600 font-bold text-lg px-8 py-6"
+              >
+                Register - Out of USA <Globe className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
     </main>

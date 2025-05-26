@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Instagram } from "lucide-react"
+import { ArrowRight, Instagram, Globe } from "lucide-react"
 
 export default function Team() {
   return (
@@ -65,29 +65,11 @@ export default function Team() {
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Miriam Sabri</h3>
                 <p className="text-green-500 font-medium mb-3">Co-Founder</p>
                 <p className="text-gray-700 mb-4">
-                  High school student passionate about making STEM education accessible to all students. Enjoys robotics
-                  and computer science.
-                </p>
-              </div>
-            </div>
-
-            {/* Team Member 6 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
-              <div className="aspect-w-1 aspect-h-1">
-                <Image
-                  src="/placeholder.svg?height=300&width=300"
-                  alt="Team Member"
-                  width={300}
-                  height={300}
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-1">Lily Wan</h3>
-                <p className="text-yellow-500 font-medium mb-3">Social Media Manager</p>
-                <p className="text-gray-700 mb-4">
-                  High school student interested in technology and coding. Manages our website and social media
-                  presence.
+                  I'm a high school student with a strong interest in STEM, especially in areas like math, engineering,
+                  and technology. I enjoy solving problems, building new ideas, and helping others learn and grow along
+                  the way. Whether it's through hands-on projects or collaborative learning, I believe in making STEM
+                  fun, accessible, and meaningful. This camp is one way I hope to share that excitement with others and
+                  inspire future innovators.
                 </p>
               </div>
             </div>
@@ -153,11 +135,22 @@ export default function Team() {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Registration is now open for our free summer camp. Spaces are limited, so sign up today!
           </p>
-          <Link href="/register">
-            <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6">
-              Register Now <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/register">
+              <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6">
+                Register Now <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+            <Link href="/global/about">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-black hover:bg-white hover:text-blue-600 font-bold text-lg px-8 py-6"
+              >
+                Register - Out of USA <Globe className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
     </main>

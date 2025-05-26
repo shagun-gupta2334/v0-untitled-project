@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Heart, Share2 } from "lucide-react"
+import { ArrowRight, Heart, Share2, Globe } from "lucide-react"
 
 export default function Donate() {
   return (
@@ -168,11 +168,22 @@ export default function Donate() {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Your support helps us create meaningful STEM experiences that can shape a child's future.
           </p>
-          <a href="https://www.gofundme.com/f/and-fund-our-camp" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6">
-              Donate Now <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://www.gofundme.com/f/and-fund-our-camp" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6">
+                Donate Now <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
+            <Link href="/global/about">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-black hover:bg-white hover:text-green-600 font-bold text-lg px-8 py-6"
+              >
+                Register - Out of USA <Globe className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
     </main>

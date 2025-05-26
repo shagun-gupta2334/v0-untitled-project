@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Beaker, Code, Lightbulb, PuzzleIcon as PuzzlePiece } from "lucide-react"
+import { ArrowRight, Beaker, Code, Lightbulb, PuzzleIcon as PuzzlePiece, Globe } from "lucide-react"
 
 export default function Home() {
   return (
@@ -18,11 +18,25 @@ export default function Home() {
                 Hands-on STEM activities designed to spark curiosity and build foundational skills in science,
                 technology, engineering, and math.
               </p>
-              <Link href="/register">
-                <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6">
-                  Register Now <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/register">
+                  <Button
+                    size="lg"
+                    className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6"
+                  >
+                    Register Now <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+                <Link href="/global/about">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-white text-black hover:bg-white hover:text-blue-600 font-bold text-lg px-8 py-6"
+                  >
+                    Register - Out of USA <Globe className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+              </div>
             </div>
             <div className="flex justify-center">
               <Image
