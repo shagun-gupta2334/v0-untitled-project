@@ -10,7 +10,7 @@ export default function About() {
       <section className="bg-pink-600 py-20 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">About Spark for STEM</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">About Spark for STEM!</h1>
             <p className="text-xl opacity-90">
               A free, student-led summer camp inspiring the next generation of scientists, engineers, and innovators.
             </p>
