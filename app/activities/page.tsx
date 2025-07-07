@@ -182,7 +182,7 @@ export default function Activities() {
             {/* Day 1 Schedule */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="bg-blue-600 text-white p-4">
-                <h3 className="text-xl font-bold">August 9 Camp Schedule (Science)</h3>
+                <h3 className="text-xl font-bold">August 9 Camp Schedule (Science and Coding)</h3>
               </div>
               <div className="p-6">
                 <div className="space-y-4">
@@ -192,27 +192,23 @@ export default function Activities() {
                   </div>
                   <div className="grid grid-cols-4 gap-4 items-center">
                     <div className="font-bold text-blue-600">11:00 - 11:15</div>
-                    <div className="col-span-3">Camp Start (Intoduction!)</div>
+                    <div className="col-span-3">Camp Start (Intoduction)</div>
                   </div>
                     <div className="grid grid-cols-4 gap-4 items-center">
                     <div className="font-bold text-blue-600">11:15 - 11:25</div>
                     <div className="col-span-3">10 Minute Brief Quiz</div>
                   </div>
                   <div className="grid grid-cols-4 gap-4 items-center">
-                    <div className="font-bold text-blue-600">11:30 - 12:20</div>
+                    <div className="font-bold text-blue-600">11:30 - 12:00</div>
                     <div className="col-span-3">Experiment 1 - Cabbage PH Indicator</div>
                   </div>
                   <div className="grid grid-cols-4 gap-4 items-center">
-                    <div className="font-bold text-blue-600">11:30 - 12:20</div>
-                    <div className="col-span-3">Experiment 1 - Cabbage PH Indicator</div>
-                  </div>
-                  <div className="grid grid-cols-4 gap-4 items-center">
-                    <div className="font-bold text-blue-600">11:30 - 12:20</div>
+                    <div className="font-bold text-blue-600">12:00 - 12:20</div>
                     <div className="col-span-3">Experiment 1 - Cabbage PH Indicator</div>
                   </div>
                   <div className="grid grid-cols-4 gap-4 items-center">
                     <div className="font-bold text-blue-600">12:20 - 1:00</div>
-                    <div className="col-span-3">Coding - Python</div>
+                    <div className="col-span-3">Coding - Micro:Bit</div>
                   </div>
                   <div className="grid grid-cols-4 gap-4 items-center">
                     <div className="font-bold text-blue-600">1:00 PM</div>
@@ -229,7 +225,7 @@ export default function Activities() {
             {/* Day 2 Schedule */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="bg-green-600 text-white p-4">
-                <h3 className="text-xl font-bold">August 10 Camp Schedule (Engineering / Science Today)</h3>
+                <h3 className="text-xl font-bold">August 10 Camp Schedule (Engineering and Science Fair)</h3>
               </div>
               <div className="p-6">
                 <div className="space-y-4">
