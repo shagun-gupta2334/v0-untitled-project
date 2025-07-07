@@ -35,7 +35,7 @@ export default function GlobalIndia() {
                     <Calendar className="h-6 w-6 text-orange-600 mr-3 mt-1" />
                     <div>
                       <h4 className="font-bold text-gray-900">Dates</h4>
-                      <p className="text-gray-700">June 14, 15</p>
+                      <p className="text-gray-700">June 21, 22</p>
                     </div>
                   </div>
                   <div className="flex items-start">

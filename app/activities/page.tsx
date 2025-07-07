@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Code, Lightbulb, PuzzleIcon as PuzzlePiece, Globe } from "lucide-react"
@@ -172,46 +171,96 @@ export default function Activities() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Sample Daily Schedule</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Sample Daily Schedules</h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              Here's what a typical day at our camp looks like. Activities vary each day to keep learning fresh and
+              Here's what typical days at our camp look like. Activities vary each day to keep learning fresh and
               exciting!
             </p>
           </div>
 
-          <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
-            <div className="bg-blue-600 text-white p-4">
-              <h3 className="text-xl font-bold">Daily Camp Schedule</h3>
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Day 1 Schedule */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="bg-blue-600 text-white p-4">
+                <h3 className="text-xl font-bold">August 9 Camp Schedule (Science)</h3>
+              </div>
+              <div className="p-6">
+                <div className="space-y-4">
+                  <div className="grid grid-cols-4 gap-4 items-center">
+                    <div className="font-bold text-blue-600">10:30 AM</div>
+                    <div className="col-span-3">Drop-off</div>
+                  </div>
+                  <div className="grid grid-cols-4 gap-4 items-center">
+                    <div className="font-bold text-blue-600">11:00 - 11:15</div>
+                    <div className="col-span-3">Camp Start (Intoduction!)</div>
+                  </div>
+                    <div className="grid grid-cols-4 gap-4 items-center">
+                    <div className="font-bold text-blue-600">11:15 - 11:25</div>
+                    <div className="col-span-3">10 Minute Brief Quiz</div>
+                  </div>
+                  <div className="grid grid-cols-4 gap-4 items-center">
+                    <div className="font-bold text-blue-600">11:30 - 12:20</div>
+                    <div className="col-span-3">Experiment 1 - Cabbage PH Indicator</div>
+                  </div>
+                  <div className="grid grid-cols-4 gap-4 items-center">
+                    <div className="font-bold text-blue-600">11:30 - 12:20</div>
+                    <div className="col-span-3">Experiment 1 - Cabbage PH Indicator</div>
+                  </div>
+                  <div className="grid grid-cols-4 gap-4 items-center">
+                    <div className="font-bold text-blue-600">11:30 - 12:20</div>
+                    <div className="col-span-3">Experiment 1 - Cabbage PH Indicator</div>
+                  </div>
+                  <div className="grid grid-cols-4 gap-4 items-center">
+                    <div className="font-bold text-blue-600">12:20 - 1:00</div>
+                    <div className="col-span-3">Coding - Python</div>
+                  </div>
+                  <div className="grid grid-cols-4 gap-4 items-center">
+                    <div className="font-bold text-blue-600">1:00 PM</div>
+                    <div className="col-span-3">Camp End (Goodbye & More!) </div>
+                  </div>
+                  <div className="grid grid-cols-4 gap-4 items-center">
+                    <div className="font-bold text-blue-600">1:05 PM</div>
+                    <div className="col-span-3">Pick-up</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="p-6">
-              <div className="space-y-4">
-                <div className="grid grid-cols-4 gap-4 items-center">
-                  <div className="font-bold text-blue-600">10:30 AM</div>
-                  <div className="col-span-3">Drop-off</div>
-                </div>
-                <div className="grid grid-cols-4 gap-4 items-center">
-                  <div className="font-bold text-blue-600">11:00 AM</div>
-                  <div className="col-span-3">Camp Start & Morning Circle</div>
-                </div>
-                <div className="grid grid-cols-4 gap-4 items-center">
-                  <div className="font-bold text-blue-600">11:15 AM</div>
-                  <div className="col-span-3">STEM Activity Session 1</div>
-                </div>
-                <div className="grid grid-cols-4 gap-4 items-center">
-                  <div className="font-bold text-blue-600">12:00 PM</div>
-                  <div className="col-span-3">Snack Break</div>
-                </div>
-                <div className="grid grid-cols-4 gap-4 items-center">
-                  <div className="font-bold text-blue-600">12:15 PM</div>
-                  <div className="col-span-3">STEM Activity Session 2</div>
-                </div>
-                <div className="grid grid-cols-4 gap-4 items-center">
-                  <div className="font-bold text-blue-600">1:00 PM</div>
-                  <div className="col-span-3">Camp End & Closing Circle</div>
-                </div>
-                <div className="grid grid-cols-4 gap-4 items-center">
-                  <div className="font-bold text-blue-600">1:05 PM</div>
-                  <div className="col-span-3">Pick-up</div>
+
+            {/* Day 2 Schedule */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="bg-green-600 text-white p-4">
+                <h3 className="text-xl font-bold">August 10 Camp Schedule (Engineering / Science Today)</h3>
+              </div>
+              <div className="p-6">
+                <div className="space-y-4">
+                  <div className="grid grid-cols-4 gap-4 items-center">
+                    <div className="font-bold text-green-600">10:30 AM</div>
+                    <div className="col-span-3">Drop-off</div>
+                  </div>
+                  <div className="grid grid-cols-4 gap-4 items-center">
+                    <div className="font-bold text-green-600">11:00 - 11:45</div>
+                    <div className="col-span-3">Learning about Engineering & Building</div>
+                  </div>
+                  <div className="grid grid-cols-4 gap-4 items-center">
+                    <div className="font-bold text-green-600">11:45 - 12:20</div>
+                    <div className="col-span-3">Building time for Science Fair</div>
+                  </div>
+                  <div className="grid grid-cols-4 gap-4 items-center">
+                    <div className="font-bold text-green-600">12:20 - 12:40</div>
+                    <div className="col-span-3">Science Fair Show and Tell</div>
+                  </div>
+                  <div className="grid grid-cols-4 gap-4 items-center">
+                    <div className="font-bold text-green-600">12:40 - 12:55</div>
+                    <div className="col-span-3">Wrap up with Slideshow + Give out freebies </div>
+                  </div>
+                  <div className="grid grid-cols-4 gap-4 items-center">
+                    <div className="font-bold text-green-600">1:00 PM</div>
+                    <div className="col-span-3">Camp End & Closing Circle</div>
+                  </div>
+                  <div className="grid grid-cols-4 gap-4 items-center">
+                    <div className="font-bold text-green-600">1:05 PM</div>
+                    <div className="col-span-3">Pick-up</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -236,7 +285,7 @@ export default function Activities() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-black hover:bg-white hover:text-blue-600 font-bold text-lg px-8 py-6"
+                className="border-white text-black hover:bg-white hover:text-blue-600 font-bold text-lg px-8 py-6 bg-transparent"
               >
                 Register - Out of USA <Globe className="ml-2 h-5 w-5" />
               </Button>

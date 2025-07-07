@@ -181,7 +181,8 @@ export default function Contact() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Can parents volunteer at the camp?</h3>
                 <p className="text-gray-700">
-                  No — Spark for STEM is a student-led camp run by trained high school volunteers.
+                  We only take 3 parent volunteers — Spark for STEM is primarily a student-led camp run by trained high
+                  school volunteers.
                 </p>
               </div>
 
@@ -215,7 +216,7 @@ export default function Contact() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-black hover:bg-white hover:text-blue-600 font-bold text-lg px-8 py-6"
+                className="border-white text-black hover:bg-white hover:text-blue-600 font-bold text-lg px-8 py-6 bg-transparent"
               >
                 Register - Out of USA <Globe className="ml-2 h-5 w-5" />
               </Button>

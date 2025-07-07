@@ -44,8 +44,7 @@ export default function Team() {
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Shagun Gupta</h3>
                 <p className="text-purple-600 font-medium mb-3">Co-Founder</p>
                 <p className="text-gray-700 mb-4">
-                  High school student passionate about making STEM education accessible to all students. Enjoys robotics
-                  and computer science.
+                  I’m a high school student with a strong passion for STEM, especially in technology, engineering, and math. I’m currently learning Python and working through the Harvard CS50 course, which has been a great way to challenge myself and build new skills. I also design and develop this website as part of this project. I enjoy problem-solving, creating new things, and sharing my interest in STEM with others. Through this camp, I hope to inspire other students to explore STEM and discover how exciting and meaningful it can be.
                 </p>
               </div>
             </div>
