@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Instagram, Facebook, ChevronDown, Globe } from "lucide-react"
+import { Menu, X, Instagram, ChevronDown, Globe } from "lucide-react"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -20,11 +20,29 @@ const Header = () => {
     setIsGlobalToggleOpen(!isGlobalToggleOpen)
   }
 
-  // Determine current selection and dropdown option based on pathname
+  // Determine current selection and dropdown options based on pathname
   const isOnIndiaPage = pathname === "/global/india"
-  const currentSelection = isOnIndiaPage ? "India" : "Global"
-  const dropdownOption = isOnIndiaPage ? "Global" : "India"
-  const dropdownLink = isOnIndiaPage ? "/global/about" : "/global/india"
+  const isOnAfricaPage = pathname === "/global/africa"
+
+  let currentSelection = "Global"
+  let dropdownOptions = [
+    { label: "India", link: "/global/india" },
+    { label: "Africa", link: "/global/africa" },
+  ]
+
+  if (isOnIndiaPage) {
+    currentSelection = "India"
+    dropdownOptions = [
+      { label: "Global", link: "/global/about" },
+      { label: "Africa", link: "/global/africa" },
+    ]
+  } else if (isOnAfricaPage) {
+    currentSelection = "Africa"
+    dropdownOptions = [
+      { label: "Global", link: "/global/about" },
+      { label: "India", link: "/global/india" },
+    ]
+  }
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -51,13 +69,16 @@ const Header = () => {
 
               {isGlobalToggleOpen && (
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-gray-200 py-2 z-50">
-                  <Link
-                    href={dropdownLink}
-                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600"
-                    onClick={() => setIsGlobalToggleOpen(false)}
-                  >
-                    {dropdownOption}
-                  </Link>
+                  {dropdownOptions.map((option) => (
+                    <Link
+                      key={option.label}
+                      href={option.link}
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                      onClick={() => setIsGlobalToggleOpen(false)}
+                    >
+                      {option.label}
+                    </Link>
+                  ))}
                 </div>
               )}
             </div>
@@ -79,9 +100,6 @@ const Header = () => {
             <Link href="/activities" className="text-gray-700 hover:text-blue-600 font-medium">
               Activities
             </Link>
-            <Link href="/team" className="text-gray-700 hover:text-blue-600 font-medium">
-              Team
-            </Link>
             <Link href="/donate" className="text-gray-700 hover:text-blue-600 font-medium">
               Donate
             </Link>
@@ -97,7 +115,7 @@ const Header = () => {
               <Link href="/global/about">
                 <Button
                   variant="outline"
-                  className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white text-sm px-4 py-2"
+                  className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white text-sm px-4 py-2 bg-transparent"
                 >
                   <Globe className="mr-1 h-4 w-4" />
                   Register for international
@@ -116,15 +134,6 @@ const Header = () => {
               aria-label="Instagram"
             >
               <Instagram className="h-5 w-5" />
-            </a>
-            <a
-              href="https://www.facebook.com/spark.forstem/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-700 hover:text-blue-600"
-              aria-label="Facebook"
-            >
-              <Facebook className="h-5 w-5" />
             </a>
             <button onClick={toggleMenu} className="text-gray-700 hover:text-blue-600 focus:outline-none">
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -158,13 +167,6 @@ const Header = () => {
                 Activities
               </Link>
               <Link
-                href="/team"
-                className="text-gray-700 hover:text-blue-600 font-medium py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Team
-              </Link>
-              <Link
                 href="/donate"
                 className="text-gray-700 hover:text-blue-600 font-medium py-2"
                 onClick={() => setIsMenuOpen(false)}
@@ -184,13 +186,16 @@ const Header = () => {
                 <div className="text-gray-500 text-sm font-medium mb-2">Global Programs</div>
                 <div className="pl-4 space-y-2">
                   <div className="text-blue-600 font-medium py-1">Current: {currentSelection}</div>
-                  <Link
-                    href={dropdownLink}
-                    className="block text-gray-600 hover:text-blue-600 py-1"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Switch to: {dropdownOption}
-                  </Link>
+                  {dropdownOptions.map((option) => (
+                    <Link
+                      key={option.label}
+                      href={option.link}
+                      className="block text-gray-600 hover:text-blue-600 py-1"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Switch to: {option.label}
+                    </Link>
+                  ))}
                 </div>
               </div>
 
@@ -202,7 +207,7 @@ const Header = () => {
                 <Link href="/global/about" onClick={() => setIsMenuOpen(false)}>
                   <Button
                     variant="outline"
-                    className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white w-full"
+                    className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white w-full bg-transparent"
                   >
                     <Globe className="mr-2 h-4 w-4" />
                     Register - Out of USA

@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Mail, MapPin, Instagram, Facebook, Globe } from "lucide-react"
+import { ArrowRight, Mail, MapPin, Instagram, Globe } from "lucide-react"
 
 export default function Contact() {
   return (
@@ -83,23 +83,6 @@ export default function Contact() {
                     </a>
                   </div>
                 </div>
-
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 mt-1">
-                    <Facebook className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="text-lg font-medium text-gray-900">Facebook</h3>
-                    <a
-                      href="https://www.facebook.com/spark.forstem/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:underline"
-                    >
-                      Spark for STEM
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -124,15 +107,6 @@ export default function Contact() {
                   >
                     <Instagram className="mr-2 h-5 w-5" />
                     Follow us on Instagram
-                  </a>
-                  <a
-                    href="https://www.facebook.com/spark.forstem/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
-                  >
-                    <Facebook className="mr-2 h-5 w-5" />
-                    Follow us on Facebook
                   </a>
                 </div>
               </div>
@@ -180,19 +154,103 @@ export default function Contact() {
 
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Can parents volunteer at the camp?</h3>
-                <p className="text-gray-700">
-                  We only take 3 parent volunteers — Spark for STEM is primarily a student-led camp run by trained high
-                  school volunteers.
+                <p className="text-gray-700 mb-3">
+                  We accept up to 3 parent volunteers to help support our student-led camp with logistics and safety
+                  supervision.
                 </p>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeP_JtPWP6WAIVN5_7N7GOSWZOJZ_6FLAG0yoXxhJDWs-cDVQ/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+                >
+                  Apply to be a parent volunteer →
+                </a>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">How can I support Spark for STEM?</h3>
                 <p className="text-gray-700">
-                  We're grateful for any support! You can support us by donating supplies, sponsoring materials,
-                  contributing to our GoFundMe, or even tell other potential sponsors. Every little bit helps keep our
-                  camp free and fun!
+                  We're grateful for any support! You can support us by donating supplies, sponsoring materials, or
+                  connecting us with potential sponsors. Contact us via email to discuss how you can help keep our camp
+                  free and fun!
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Parent Volunteer Section */}
+      <section className="py-16 bg-blue-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Parent Volunteer Opportunities</h2>
+              <div className="w-24 h-1 bg-blue-500 mx-auto mb-6"></div>
+              <p className="text-lg text-gray-700">
+                We welcome a limited number of parent volunteers to help support our student-led camp.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg p-8">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Join Our Volunteer Team</h3>
+                  <p className="text-lg text-gray-700 mb-6">
+                    While Spark for STEM is primarily student-led, we accept up to 3 parent volunteers to help with
+                    logistics, safety supervision, and supporting our high school instructors during camp activities.
+                  </p>
+
+                  <div className="space-y-4 mb-6">
+                    <div className="flex items-start">
+                      <span className="text-blue-500 mr-2 mt-1">•</span>
+                      <span className="text-gray-700">Help with activity setup and cleanup</span>
+                    </div>
+                    <div className="flex items-start">
+                      <span className="text-blue-500 mr-2 mt-1">•</span>
+                      <span className="text-gray-700">Assist with safety supervision during experiments</span>
+                    </div>
+                    <div className="flex items-start">
+                      <span className="text-blue-500 mr-2 mt-1">•</span>
+                      <span className="text-gray-700">Support student instructors with materials and logistics</span>
+                    </div>
+                    <div className="flex items-start">
+                      <span className="text-blue-500 mr-2 mt-1">•</span>
+                      <span className="text-gray-700">Help with registration and check-in/check-out</span>
+                    </div>
+                  </div>
+
+                  <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
+                    <div className="flex">
+                      <div className="ml-3">
+                        <p className="text-sm text-yellow-700">
+                          <strong>Limited Spots:</strong> We only accept 3 parent volunteers to maintain our student-led
+                          focus. Applications will be reviewed on a first-come, first-served basis.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="text-center">
+                  <div className="bg-blue-100 p-6 rounded-lg">
+                    <h4 className="text-xl font-bold text-gray-900 mb-4">Ready to Volunteer?</h4>
+                    <p className="text-gray-700 mb-6">
+                      Fill out our volunteer application form to be considered for one of our 3 parent volunteer
+                      positions.
+                    </p>
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSeP_JtPWP6WAIVN5_7N7GOSWZOJZ_6FLAG0yoXxhJDWs-cDVQ/viewform"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+                    >
+                      Apply to Volunteer
+                    </a>
+                    <p className="text-sm text-gray-600 mt-3">Application deadline: Two weeks before camp starts</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

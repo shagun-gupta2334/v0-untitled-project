@@ -44,6 +44,20 @@ export default function About() {
               />
             </div>
           </div>
+
+          {/* Classroom Image */}
+          <div className="mt-12 text-center">
+            <Image
+              src="/images/classroom-session.png"
+              alt="Students learning in our STEM classroom environment"
+              width={800}
+              height={600}
+              className="rounded-lg shadow-lg mx-auto"
+            />
+            <p className="text-gray-600 mt-4 italic">
+              Students engaged in hands-on STEM learning in our classroom environment
+            </p>
+          </div>
         </div>
       </section>
 
@@ -165,7 +179,7 @@ export default function About() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-black hover:bg-white hover:text-blue-600 font-bold text-lg px-8 py-6"
+                className="border-white text-black hover:bg-white hover:text-blue-600 font-bold text-lg px-8 py-6 bg-transparent"
               >
                 Register - Out of USA <Globe className="ml-2 h-5 w-5" />
               </Button>

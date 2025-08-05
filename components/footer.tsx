@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Instagram, Facebook, Globe } from "lucide-react"
+import { Instagram, Globe } from "lucide-react"
 
 const Footer = () => {
   return (
@@ -27,16 +27,6 @@ const Footer = () => {
                 <Instagram className="h-6 w-6" />
                 <span className="sr-only">Instagram</span>
               </a>
-              <a
-                href="https://www.facebook.com/spark.forstem/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-yellow-400 transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-6 w-6" />
-                <span className="sr-only">Facebook</span>
-              </a>
             </div>
           </div>
 
@@ -60,13 +50,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/team" className="text-gray-400 hover:text-yellow-400 transition-colors">
-                  Team
-                </Link>
-              </li>
-              <li>
                 <Link href="/donate" className="text-gray-400 hover:text-yellow-400 transition-colors">
-                  Donate
+                  Support Us
                 </Link>
               </li>
               <li>
@@ -103,6 +88,16 @@ const Footer = () => {
               >
                 Support Our Camp
               </Link>
+            </div>
+            <div className="mt-3">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeP_JtPWP6WAIVN5_7N7GOSWZOJZ_6FLAG0yoXxhJDWs-cDVQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium px-4 py-2 rounded-md transition-colors text-center w-full"
+              >
+                Volunteer as Parent
+              </a>
             </div>
           </div>
         </div>

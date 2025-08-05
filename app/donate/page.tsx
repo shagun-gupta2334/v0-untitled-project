@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Heart, Share2, Globe } from "lucide-react"
+import { ArrowRight, Heart, Share2, Globe, Mail } from "lucide-react"
 
 export default function Donate() {
   return (
@@ -12,13 +12,13 @@ export default function Donate() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Support Our Mission</h1>
             <p className="text-xl opacity-90">
-              Help us make STEM education accessible to all young learners through your generous donation.
+              Help us make STEM education accessible to all young learners through your generous support.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Donation Information */}
+      {/* Support Information */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
@@ -27,7 +27,7 @@ export default function Donate() {
               <div className="w-24 h-1 bg-green-500 mx-auto mb-6"></div>
               <p className="text-lg text-gray-700">
                 Spark for STEM is committed to providing free, high-quality STEM education to elementary school
-                students. Your donation helps us purchase materials, secure venues, and ensure our camp remains
+                students. Your support helps us purchase materials, secure venues, and ensure our camp remains
                 accessible to all children regardless of their financial background.
               </p>
             </div>
@@ -35,7 +35,7 @@ export default function Donate() {
             <div className="bg-gray-50 rounded-lg shadow-md p-8 mb-12">
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">How Your Donation Helps</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">How Your Support Helps</h3>
                   <ul className="space-y-3 text-gray-700">
                     <li className="flex items-start">
                       <span className="text-green-500 mr-2">•</span>
@@ -62,17 +62,16 @@ export default function Donate() {
                 <div className="flex-1 flex justify-center">
                   <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-xs text-center">
                     <Heart className="h-12 w-12 text-red-500 mx-auto mb-4" />
-                    <h4 className="text-xl font-bold text-gray-900 mb-2">Donate Today</h4>
+                    <h4 className="text-xl font-bold text-gray-900 mb-2">Support Us Today</h4>
                     <p className="text-gray-700 mb-4">
                       Every contribution makes a difference in a child's STEM journey.
                     </p>
                     <a
-                      href="https://www.gofundme.com/f/and-fund-our-camp"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block w-full bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-4 rounded-md transition-colors"
+                      href="mailto:Sparkforstem@gmail.com?subject=Support Inquiry - Donation"
+                      className="inline-flex items-center justify-center w-full bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-4 rounded-md transition-colors"
                     >
-                      Support on GoFundMe
+                      <Mail className="mr-2 h-4 w-4" />
+                      Contact Us to Support
                     </a>
                   </div>
                 </div>
@@ -81,26 +80,12 @@ export default function Donate() {
 
             <div className="mb-12">
               <Image
-                src="/images/stem-activities-group.png"
+                src="/images/classroom-session.png"
                 alt="Students engaged in STEM activities"
                 width={800}
                 height={500}
                 className="rounded-lg shadow-lg w-full"
               />
-            </div>
-
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="aspect-w-16 aspect-h-9 relative h-[400px]">
-                <iframe
-                  src="https://www.gofundme.com/f/and-fund-our-camp/widget/large/"
-                  width="100%"
-                  height="100%"
-                  frameBorder="0"
-                  scrolling="no"
-                  className="absolute inset-0 w-full h-full"
-                  title="Spark for STEM GoFundMe Campaign"
-                ></iframe>
-              </div>
             </div>
           </div>
         </div>
@@ -125,7 +110,7 @@ export default function Donate() {
                   We welcome donations of materials and supplies for our hands-on activities.
                 </p>
                 <Link href="/contact">
-                  <Button variant="outline" className="w-full">
+                  <Button variant="outline" className="w-full bg-transparent">
                     Contact Us About Supplies
                   </Button>
                 </Link>
@@ -139,7 +124,7 @@ export default function Donate() {
                 <ul className="text-gray-700 mb-4 space-y-2">
                   <li className="flex items-start">
                     <span className="text-blue-500 mr-2">•</span>
-                    <span>Share our camp info on social media (Instagram, Facebook, local groups)</span>
+                    <span>Share our camp info on social media (Instagram, local groups)</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-500 mr-2">•</span>
@@ -151,7 +136,7 @@ export default function Donate() {
                   </li>
                 </ul>
                 <Link href="/contact">
-                  <Button variant="outline" className="w-full flex items-center justify-center">
+                  <Button variant="outline" className="w-full flex items-center justify-center bg-transparent">
                     <Share2 className="mr-2 h-4 w-4" /> Help Spread the Word
                   </Button>
                 </Link>
@@ -169,16 +154,16 @@ export default function Donate() {
             Your support helps us create meaningful STEM experiences that can shape a child's future.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://www.gofundme.com/f/and-fund-our-camp" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:Sparkforstem@gmail.com?subject=Support Inquiry - Donation">
               <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6">
-                Donate Now <ArrowRight className="ml-2 h-5 w-5" />
+                Contact Us to Support <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </a>
             <Link href="/global/about">
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-black hover:bg-white hover:text-green-600 font-bold text-lg px-8 py-6"
+                className="border-white text-black hover:bg-white hover:text-green-600 font-bold text-lg px-8 py-6 bg-transparent"
               >
                 Register - Out of USA <Globe className="ml-2 h-5 w-5" />
               </Button>

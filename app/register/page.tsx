@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft } from 'lucide-react'
 
 export default function Register() {
   return (
@@ -92,6 +92,21 @@ export default function Register() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">How long is the camp?</h3>
                 <p className="text-gray-700">Our camp runs for one weekend, from 11:00 AM to 1:00 PM each day.</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Can parents volunteer at the camp?</h3>
+                <p className="text-gray-700 mb-3">
+                  We accept up to 3 parent volunteers to help support our student-led camp with logistics and safety supervision.
+                </p>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeP_JtPWP6WAIVN5_7N7GOSWZOJZ_6FLAG0yoXxhJDWs-cDVQ/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+                >
+                  Apply to be a parent volunteer →
+                </a>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">

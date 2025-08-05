@@ -76,7 +76,7 @@ export default function GlobalAbout() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Join Our Global Programs</h2>
               <div className="w-24 h-1 bg-green-500 mx-auto mb-6"></div>
               <p className="text-lg text-gray-700 mb-8">
-                If you don't live in the USA and would like to join our STEM programs, register here:
+                If you don't live in the USA and would like to join our STEM programs, explore our partnerships:
               </p>
             </div>
 
@@ -104,11 +104,28 @@ export default function GlobalAbout() {
                       </div>
                       <div className="flex-1">
                         <h4 className="font-bold text-gray-900">India Program</h4>
-                        <p className="text-sm text-gray-500">Ages 8-14 • Free registration</p>
+                        <p className="text-sm text-gray-500">Coming Soon</p>
                       </div>
-                      <a href="https://forms.gle/odcZQ79dDSDpYCxu9" target="_blank" rel="noopener noreferrer">
-                        <Button className="bg-orange-600 hover:bg-orange-700 text-white">Register for India</Button>
-                      </a>
+                      <Link href="/global/india">
+                        <Button className="bg-orange-600 hover:bg-orange-700 text-white">
+                          Partner with us from India
+                        </Button>
+                      </Link>
+                    </div>
+
+                    <div className="flex items-center p-4 bg-green-50 rounded-lg">
+                      <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-4">
+                        <span className="text-white font-bold">🌍</span>
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="font-bold text-gray-900">Africa Program</h4>
+                        <p className="text-sm text-gray-500">Coming Soon</p>
+                      </div>
+                      <Link href="/global/africa">
+                        <Button className="bg-green-600 hover:bg-green-700 text-white">
+                          Partner with us from Africa
+                        </Button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -129,7 +146,10 @@ export default function GlobalAbout() {
                 Don't see your location? We're always looking to expand our global reach.
               </p>
               <Link href="/contact">
-                <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">
+                <Button
+                  variant="outline"
+                  className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white bg-transparent"
+                >
                   Contact Us About New Locations
                 </Button>
               </Link>
@@ -151,7 +171,7 @@ export default function GlobalAbout() {
             </div>
 
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <div className="grid md:grid-cols-2 gap-6 mt-8 max-w-2xl mx-auto">
+              <div className="grid md:grid-cols-3 gap-6 mt-8 max-w-4xl mx-auto">
                 <Link
                   href="/register"
                   className="text-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
@@ -172,7 +192,18 @@ export default function GlobalAbout() {
                     <span className="text-white font-bold">🇮🇳</span>
                   </div>
                   <h4 className="font-bold text-gray-900">India</h4>
-                  <p className="text-xs text-gray-500 mt-1">200+ students served</p>
+                  <p className="text-xs text-gray-500 mt-1">Coming Soon</p>
+                </Link>
+
+                <Link
+                  href="/global/africa"
+                  className="text-center p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors"
+                >
+                  <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span className="text-white font-bold">🌍</span>
+                  </div>
+                  <h4 className="font-bold text-gray-900">Africa</h4>
+                  <p className="text-xs text-gray-500 mt-1">Coming Soon</p>
                 </Link>
               </div>
             </div>
@@ -196,7 +227,9 @@ export default function GlobalAbout() {
                   How is the experience going to be Hands-On for me?
                 </h3>
                 <p className="text-gray-700">
-                  To ensure every child can fully participate in our hands-on activities, we’ll provide a PDF in advance with a list of all the materials you’ll need. During the programs, we’ll guide students step-by-step through each experiment.
+                  To ensure every child can fully participate in our hands-on activities, we'll provide a PDF in advance
+                  with a list of all the materials you'll need. During the programs, we'll guide students step-by-step
+                  through each experiment.
                 </p>
               </div>
 
@@ -213,8 +246,8 @@ export default function GlobalAbout() {
                   What age groups can participate in global programs?
                 </h3>
                 <p className="text-gray-700">
-                  Our programs are designed for ages 8-14. Some programs may have
-                  slight variations based on local educational systems and needs.
+                  Our programs are designed for ages 8-14. Some programs may have slight variations based on local
+                  educational systems and needs.
                 </p>
               </div>
 
@@ -227,30 +260,44 @@ export default function GlobalAbout() {
               </div>
 
               <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Will photos be taken during the program?
-                </h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Will photos be taken during the program?</h3>
                 <p className="text-gray-700">
-                  Yes — with permission from parents, we may take photos during the camp to share on our website and social media. No names will ever be posted.
+                  Yes — with permission from parents, we may take photos during the camp to share on our website and
+                  social media. No names will ever be posted.
                 </p>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Are the programs conducted in English?</h3>
                 <p className="text-gray-700">
-                  While our primary language is English, we try to adapt our programs to local needs. If needed please try to keep a translator nearby.
+                  While our primary language is English, we try to adapt our programs to local needs. If needed please
+                  try to keep a translator nearby.
                 </p>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  How can I support the camp?
-                </h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">How can I support the camp?</h3>
                 <p className="text-gray-700">
-                  We're grateful for any support! You can support us by donating supplies, sponsoring materials, 
-                  contributing to our GoFundMe, or even tell other potential sponsors. Every little bit helps keep our camp
+                  We're grateful for any support! You can support us by donating supplies, sponsoring materials, or
+                  connecting us with potential sponsors. Contact us via email to discuss how you can help keep our camp
                   free and fun!
                 </p>
+              </div>
+
+              <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Can parents volunteer at the camp?</h3>
+                <p className="text-gray-700 mb-3">
+                  We accept up to 3 parent volunteers to help support our student-led camp with logistics and safety
+                  supervision.
+                </p>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeP_JtPWP6WAIVN5_7N7GOSWZOJZ_6FLAG0yoXxhJDWs-cDVQ/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+                >
+                  Apply to be a parent volunteer →
+                </a>
               </div>
             </div>
           </div>
