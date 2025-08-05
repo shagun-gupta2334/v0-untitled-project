@@ -45,18 +45,20 @@ export default function About() {
             </div>
           </div>
 
-          {/* Classroom Image */}
-          <div className="mt-12 text-center">
-            <Image
-              src="/images/classroom-session.png"
-              alt="Students learning in our STEM classroom environment"
-              width={800}
-              height={600}
-              className="rounded-lg shadow-lg mx-auto"
-            />
-            <p className="text-gray-600 mt-4 italic">
-              Students engaged in hands-on STEM learning in our classroom environment
-            </p>
+          {/* Classroom Images */}
+          <div className="mt-12 space-y-8">
+            <div className="text-center">
+              <Image
+                src="/images/classroom-presentation.jpeg"
+                alt="Students learning about the Spaghetti Tower Marshmallow Challenge in our STEM classroom"
+                width={800}
+                height={600}
+                className="rounded-lg shadow-lg mx-auto"
+              />
+              <p className="text-gray-600 mt-4 italic">
+                Our instructors presenting the Spaghetti Tower Marshmallow Challenge - a hands-on engineering activity
+              </p>
+            </div>
           </div>
         </div>
       </section>

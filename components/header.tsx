@@ -100,9 +100,6 @@ const Header = () => {
             <Link href="/activities" className="text-gray-700 hover:text-blue-600 font-medium">
               Activities
             </Link>
-            <Link href="/team" className="text-gray-700 hover:text-blue-600 font-medium">
-              Team
-            </Link>
             <Link href="/donate" className="text-gray-700 hover:text-blue-600 font-medium">
               Donate
             </Link>
@@ -168,13 +165,6 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Activities
-              </Link>
-              <Link
-                href="/team"
-                className="text-gray-700 hover:text-blue-600 font-medium py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Team
               </Link>
               <Link
                 href="/donate"
