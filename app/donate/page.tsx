@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Heart, Share2, Globe, Mail } from "lucide-react"
@@ -76,16 +75,6 @@ export default function Donate() {
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div className="mb-12">
-              <Image
-                src="/images/classroom-session.png"
-                alt="Students engaged in STEM activities"
-                width={800}
-                height={500}
-                className="rounded-lg shadow-lg w-full"
-              />
             </div>
           </div>
         </div>

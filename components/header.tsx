@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Instagram, ChevronDown, Globe } from "lucide-react"
+import { Menu, X, Instagram, ChevronDown, Globe } from 'lucide-react'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -97,6 +97,9 @@ const Header = () => {
             <Link href="/about" className="text-gray-700 hover:text-blue-600 font-medium">
               About
             </Link>
+            <Link href="/events" className="text-gray-700 hover:text-blue-600 font-medium">
+              Events
+            </Link>
             <Link href="/activities" className="text-gray-700 hover:text-blue-600 font-medium">
               Activities
             </Link>
@@ -118,7 +121,7 @@ const Header = () => {
                   className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white text-sm px-4 py-2 bg-transparent"
                 >
                   <Globe className="mr-1 h-4 w-4" />
-                  Register for international
+                  Partner with us - Globally
                 </Button>
               </Link>
             </div>
@@ -158,6 +161,13 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
+              </Link>
+              <Link
+                href="/events"
+                className="text-gray-700 hover:text-blue-600 font-medium py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Events
               </Link>
               <Link
                 href="/activities"
@@ -210,7 +220,7 @@ const Header = () => {
                     className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white w-full bg-transparent"
                   >
                     <Globe className="mr-2 h-4 w-4" />
-                    Register - Out of USA
+                    Partner with us - Globally
                   </Button>
                 </Link>
               </div>

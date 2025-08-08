@@ -78,7 +78,7 @@ const Footer = () => {
                 className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-md transition-colors"
               >
                 <Globe className="mr-2 h-4 w-4" />
-                Register - Out of USA
+                Partner with us - Globally
               </Link>
             </div>
             <div className="mt-4">

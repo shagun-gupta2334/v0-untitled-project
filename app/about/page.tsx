@@ -45,18 +45,20 @@ export default function About() {
             </div>
           </div>
 
-          {/* Classroom Images */}
+          {/* Mission in Action */}
           <div className="mt-12 space-y-8">
             <div className="text-center">
               <Image
                 src="/images/classroom-presentation.jpeg"
-                alt="Students learning about the Spaghetti Tower Marshmallow Challenge in our STEM classroom"
+                alt="Our student instructors presenting the Spaghetti Tower Marshmallow Challenge to engaged elementary students in a classroom setting"
                 width={800}
                 height={600}
                 className="rounded-lg shadow-lg mx-auto"
               />
               <p className="text-gray-600 mt-4 italic">
-                Our instructors presenting the Spaghetti Tower Marshmallow Challenge - a hands-on engineering activity
+                Our high school instructors presenting the Spaghetti Tower Marshmallow Challenge to elementary students.
+                This engineering activity teaches students about structural design, teamwork, and creative
+                problem-solving - core elements of our hands-on STEM approach.
               </p>
             </div>
           </div>
@@ -119,7 +121,10 @@ export default function About() {
               </li>
               <li className="flex items-start">
                 <span className="text-blue-600 mr-2">•</span>
-                <span>Location: The Roudenbush Community Center, 65 Main Street, Westford, MA 01886 — Room 105</span>
+                <span>
+                  Location: The Roudenbush Community Center, 65 Main Street, Westford, MA 01886 — Room 105 (August 9-10,
+                  2025 only)
+                </span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-600 mr-2">•</span>

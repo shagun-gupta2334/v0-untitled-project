@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Beaker, Code, Lightbulb, PuzzleIcon as PuzzlePiece, Globe } from "lucide-react"
+import { ArrowRight, Beaker, Code, Lightbulb, PuzzleIcon as PuzzlePiece, Globe } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -31,9 +31,9 @@ export default function Home() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-white text-black hover:bg-white hover:text-blue-600 font-bold text-lg px-8 py-6"
+                    className="border-white text-black hover:bg-white hover:text-blue-600 font-bold text-lg px-8 py-6 bg-transparent"
                   >
-                    Register - Out of USA <Globe className="ml-2 h-5 w-5" />
+                    Partner with us - Globally <Globe className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
               </div>
@@ -54,6 +54,121 @@ export default function Home() {
           className="absolute bottom-0 left-0 right-0 h-16 bg-white"
           style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 0)" }}
         ></div>
+      </section>
+
+      {/* Upcoming Events Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Upcoming Events</h2>
+            <div className="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              Stay updated with our latest STEM events, camps, and special programs designed to inspire young learners.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Main Summer Camp Event */}
+            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg shadow-lg overflow-hidden border-2 border-blue-200">
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-4">
+                  <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">Featured</span>
+                  <span className="text-blue-600 font-bold">FREE</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Summer STEM Camp 2025</h3>
+                <p className="text-gray-700 mb-4">
+                  Our flagship 2-day hands-on STEM camp for elementary students featuring chemistry experiments, coding, and engineering challenges.
+                </p>
+                <div className="space-y-2 text-sm text-gray-600 mb-4">
+                  <div className="flex items-center">
+                    <span className="font-medium mr-2">📅</span>
+                    <span>August 9-10, 2025</span>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="font-medium mr-2">🕐</span>
+                    <span>11:00 AM - 1:00 PM</span>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="font-medium mr-2">📍</span>
+                    <span>Westford, MA</span>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="font-medium mr-2">👥</span>
+                    <span>Ages 8-14</span>
+                  </div>
+                </div>
+                <Link href="/events/summer-stem-camp-2025">
+                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                    Learn More & Register
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Africa Global Camp */}
+            <div className="bg-gradient-to-br from-green-50 to-yellow-50 rounded-lg shadow-lg overflow-hidden border-2 border-green-200">
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-4">
+                  <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">Global</span>
+                  <span className="text-green-600 font-bold">FREE</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">First Global Camp - Africa</h3>
+                <p className="text-gray-700 mb-4">
+                  Our inaugural virtual STEM camp for students across Africa, featuring hands-on experiments and coding activities delivered online.
+                </p>
+                <div className="space-y-2 text-sm text-gray-600 mb-4">
+                  <div className="flex items-center">
+                    <span className="font-medium mr-2">📅</span>
+                    <span>Coming Soon</span>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="font-medium mr-2">🌐</span>
+                    <span>Online via Google Meet</span>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="font-medium mr-2">🌍</span>
+                    <span>Africa-wide</span>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="font-medium mr-2">👥</span>
+                    <span>Ages 8-14</span>
+                  </div>
+                </div>
+                <Link href="/events/global-africa-camp">
+                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
+                    Learn More & Register
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Add New Event Placeholder */}
+            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg shadow-lg overflow-hidden border-2 border-dashed border-gray-300">
+              <div className="p-6 text-center">
+                <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">📅</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">More Events Coming Soon!</h3>
+                <p className="text-gray-600 mb-4">
+                  We're planning exciting new STEM events and workshops. Stay tuned for announcements!
+                </p>
+                <Link href="/contact">
+                  <Button variant="outline" className="bg-transparent border-gray-400 text-gray-600 hover:bg-gray-100">
+                    Get Notified
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link href="/events">
+              <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white bg-transparent">
+                View All Events <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
       </section>
 
       {/* About Section */}
@@ -191,7 +306,10 @@ export default function Home() {
 
           <div className="text-center mt-12">
             <Link href="/activities">
-              <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">
+              <Button
+                variant="outline"
+                className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white bg-transparent"
+              >
                 View All Activities <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>

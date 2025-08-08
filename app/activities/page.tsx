@@ -194,7 +194,7 @@ export default function Activities() {
                     <div className="font-bold text-blue-600">11:00 - 11:15</div>
                     <div className="col-span-3">Camp Start (Intoduction)</div>
                   </div>
-                    <div className="grid grid-cols-4 gap-4 items-center">
+                  <div className="grid grid-cols-4 gap-4 items-center">
                     <div className="font-bold text-blue-600">11:15 - 11:25</div>
                     <div className="col-span-3">10 Minute Brief Quiz</div>
                   </div>
@@ -283,7 +283,7 @@ export default function Activities() {
                 variant="outline"
                 className="border-white text-black hover:bg-white hover:text-blue-600 font-bold text-lg px-8 py-6 bg-transparent"
               >
-                Register - Out of USA <Globe className="ml-2 h-5 w-5" />
+                Partner with us - Globally <Globe className="ml-2 h-5 w-5" />
               </Button>
             </Link>
           </div>

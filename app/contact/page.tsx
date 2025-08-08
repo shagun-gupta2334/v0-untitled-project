@@ -43,7 +43,7 @@ export default function Contact() {
                     <MapPin className="h-6 w-6 text-blue-600" />
                   </div>
                   <div className="ml-4">
-                    <h3 className="text-lg font-medium text-gray-900">Camp Location (National)</h3>
+                    <h3 className="text-lg font-medium text-gray-900">Camp Location (August 9-10, 2025 only)</h3>
                     <a
                       href="https://www.google.com/maps/place/The+Roudenbush+Community+Center,+Inc/@42.5831587,-71.438312,17z/"
                       target="_blank"
@@ -276,7 +276,7 @@ export default function Contact() {
                 variant="outline"
                 className="border-white text-black hover:bg-white hover:text-blue-600 font-bold text-lg px-8 py-6 bg-transparent"
               >
-                Register - Out of USA <Globe className="ml-2 h-5 w-5" />
+                Partner with us - Globally <Globe className="ml-2 h-5 w-5" />
               </Button>
             </Link>
           </div>
