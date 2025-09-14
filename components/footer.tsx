@@ -62,17 +62,13 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Register */}
+          {/* Get Involved */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Join Us</h3>
-            <p className="text-gray-400 mb-4">Registration is now open for our free summer camp. Spaces are limited!</p>
+            <h3 className="text-lg font-bold mb-4">Get Involved</h3>
+            <p className="text-gray-400 mb-4">
+              Join our mission to make STEM education accessible to all young learners.
+            </p>
             <div className="space-y-3">
-              <Link
-                href="/register"
-                className="block bg-yellow-400 hover:bg-yellow-500 text-black font-medium px-4 py-2 rounded-md transition-colors text-center"
-              >
-                Register Now
-              </Link>
               <Link
                 href="/global/about"
                 className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-md transition-colors"
@@ -86,7 +82,7 @@ const Footer = () => {
                 href="/donate"
                 className="inline-block bg-green-500 hover:bg-green-600 text-white font-medium px-4 py-2 rounded-md transition-colors"
               >
-                Support Our Camp
+                Support Our Programs
               </Link>
             </div>
             <div className="mt-3">

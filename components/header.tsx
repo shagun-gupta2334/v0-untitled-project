@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Instagram, ChevronDown, Globe } from 'lucide-react'
+import { Menu, X, Instagram, ChevronDown, Globe } from "lucide-react"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -25,23 +25,11 @@ const Header = () => {
   const isOnAfricaPage = pathname === "/global/africa"
 
   let currentSelection = "Global"
-  let dropdownOptions = [
-    { label: "India", link: "/global/india" },
-    { label: "Africa", link: "/global/africa" },
-  ]
+  let dropdownOptions = [{ label: "Africa", link: "/global/africa" }]
 
-  if (isOnIndiaPage) {
-    currentSelection = "India"
-    dropdownOptions = [
-      { label: "Global", link: "/global/about" },
-      { label: "Africa", link: "/global/africa" },
-    ]
-  } else if (isOnAfricaPage) {
+  if (isOnAfricaPage) {
     currentSelection = "Africa"
-    dropdownOptions = [
-      { label: "Global", link: "/global/about" },
-      { label: "India", link: "/global/india" },
-    ]
+    dropdownOptions = [{ label: "Global", link: "/global/about" }]
   }
 
   return (
@@ -110,11 +98,8 @@ const Header = () => {
               Contact
             </Link>
 
-            {/* Registration Buttons */}
+            {/* Global Button */}
             <div className="flex items-center space-x-3">
-              <Link href="/register">
-                <Button className="bg-yellow-400 hover:bg-yellow-500 text-black text-sm px-4 py-2">Register Now</Button>
-              </Link>
               <Link href="/global/about">
                 <Button
                   variant="outline"
@@ -209,11 +194,8 @@ const Header = () => {
                 </div>
               </div>
 
-              {/* Mobile Registration Buttons */}
+              {/* Mobile Global Button */}
               <div className="space-y-3 pt-4 border-t border-gray-200">
-                <Link href="/register" onClick={() => setIsMenuOpen(false)}>
-                  <Button className="bg-yellow-400 hover:bg-yellow-500 text-black w-full">Register Now</Button>
-                </Link>
                 <Link href="/global/about" onClick={() => setIsMenuOpen(false)}>
                   <Button
                     variant="outline"

@@ -11,7 +11,7 @@ export default function Contact() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
-            <p className="text-xl opacity-90">Have questions about our STEM camp? We're here to help!</p>
+            <p className="text-xl opacity-90">Have questions about our STEM programs? We're here to help!</p>
           </div>
         </div>
       </section>
@@ -23,8 +23,8 @@ export default function Contact() {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Get in Touch</h2>
               <p className="text-lg text-gray-700 mb-8">
-                Whether you have questions about registration, camp activities, or want to learn more about our program,
-                we're here to help. Fill out the form and our team will get back to you as soon as possible.
+                Whether you have questions about our programs, want to learn more about partnerships, or are interested
+                in our global initiatives, we're here to help. Fill out the form or reach out to us directly.
               </p>
 
               <div className="space-y-6">
@@ -43,27 +43,8 @@ export default function Contact() {
                     <MapPin className="h-6 w-6 text-blue-600" />
                   </div>
                   <div className="ml-4">
-                    <h3 className="text-lg font-medium text-gray-900">Camp Location (August 9-10, 2025 only)</h3>
-                    <a
-                      href="https://www.google.com/maps/place/The+Roudenbush+Community+Center,+Inc/@42.5831587,-71.438312,17z/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:underline"
-                    >
-                      The Roudenbush Community Center
-                      <br />
-                      65 Main Street, Westford, MA 01886
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 mt-1">
-                    <MapPin className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="text-lg font-medium text-gray-900">Camp Location (International)</h3>
-                    <p className="text-gray-700">Google Meet (Invite will be scheduled)</p>
+                    <h3 className="text-lg font-medium text-gray-900">Global Programs (International)</h3>
+                    <p className="text-gray-700">Online via Google Meet (Invite will be scheduled)</p>
                   </div>
                 </div>
 
@@ -96,7 +77,7 @@ export default function Contact() {
                   </a>
                 </p>
                 <p className="text-gray-700 mb-6">
-                  You can also follow us on social media for updates and announcements about our camp.
+                  You can also follow us on social media for updates and announcements about our programs.
                 </p>
                 <div className="flex flex-col space-y-4">
                   <a
@@ -108,21 +89,6 @@ export default function Contact() {
                     <Instagram className="mr-2 h-5 w-5" />
                     Follow us on Instagram
                   </a>
-                </div>
-              </div>
-              <div className="mt-8 bg-white rounded-lg shadow-lg overflow-hidden">
-                <div className="aspect-w-16 aspect-h-9 relative h-[300px]">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2946.0254673262584!2d-71.43831199999999!3d42.5831587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3bd68267b31f7%3A0x5be2c174c897e24f!2sThe%20Roudenbush%20Community%20Center%2C%20Inc!5e0!3m2!1sen!2sus!4v1716733000000!5m2!1sen!2sus"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen={false}
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    className="absolute inset-0 w-full h-full"
-                    title="Camp Location Map"
-                  ></iframe>
                 </div>
               </div>
             </div>
@@ -138,25 +104,26 @@ export default function Contact() {
 
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">When does registration close?</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">How can I stay updated about upcoming events?</h3>
                 <p className="text-gray-700">
-                  Registration closes two weeks before the camp start date or when all spots are filled, whichever comes
-                  first.
+                  Follow us on Instagram @sparkforstem or email us to be added to our updates list. We announce new
+                  programs and events regularly.
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Is there a waitlist if the camp is full?</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Do you offer programs outside the USA?</h3>
                 <p className="text-gray-700">
-                  Yes, we maintain a waitlist and will contact you if a spot becomes available.
+                  Yes! We have global programs for students in India and Africa. These are conducted online via Google
+                  Meet and are completely free.
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Can parents volunteer at the camp?</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Can parents volunteer for programs?</h3>
                 <p className="text-gray-700 mb-3">
-                  We accept up to 3 parent volunteers to help support our student-led camp with logistics and safety
-                  supervision.
+                  We accept a limited number of parent volunteers to help support our student-led programs with
+                  logistics and safety supervision.
                 </p>
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSeP_JtPWP6WAIVN5_7N7GOSWZOJZ_6FLAG0yoXxhJDWs-cDVQ/viewform"
@@ -172,8 +139,8 @@ export default function Contact() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">How can I support Spark for STEM?</h3>
                 <p className="text-gray-700">
                   We're grateful for any support! You can support us by donating supplies, sponsoring materials, or
-                  connecting us with potential sponsors. Contact us via email to discuss how you can help keep our camp
-                  free and fun!
+                  connecting us with potential sponsors. Contact us via email to discuss how you can help keep our
+                  programs free and accessible!
                 </p>
               </div>
             </div>
@@ -189,7 +156,7 @@ export default function Contact() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Parent Volunteer Opportunities</h2>
               <div className="w-24 h-1 bg-blue-500 mx-auto mb-6"></div>
               <p className="text-lg text-gray-700">
-                We welcome a limited number of parent volunteers to help support our student-led camp.
+                We welcome a limited number of parent volunteers to help support our student-led programs.
               </p>
             </div>
 
@@ -199,7 +166,7 @@ export default function Contact() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Join Our Volunteer Team</h3>
                   <p className="text-lg text-gray-700 mb-6">
                     While Spark for STEM is primarily student-led, we accept up to 3 parent volunteers to help with
-                    logistics, safety supervision, and supporting our high school instructors during camp activities.
+                    logistics, safety supervision, and supporting our high school instructors during activities.
                   </p>
 
                   <div className="space-y-4 mb-6">
@@ -248,7 +215,7 @@ export default function Contact() {
                     >
                       Apply to Volunteer
                     </a>
-                    <p className="text-sm text-gray-600 mt-3">Application deadline: Two weeks before camp starts</p>
+                    <p className="text-sm text-gray-600 mt-3">Application deadline: Before each program starts</p>
                   </div>
                 </div>
               </div>
@@ -262,14 +229,15 @@ export default function Contact() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to join our STEM adventure?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Registration is now open for our free summer camp. Spaces are limited, so sign up today!
+            Get in touch to learn about our programs and how you can get involved in bringing STEM education to young
+            learners.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/register">
+            <a href="mailto:Sparkforstem@gmail.com">
               <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6">
-                Register Now <ArrowRight className="ml-2 h-5 w-5" />
+                Email Us <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-            </Link>
+            </a>
             <Link href="/global/about">
               <Button
                 size="lg"

@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Beaker, Code, Lightbulb, PuzzleIcon as PuzzlePiece, Globe } from 'lucide-react'
+import { ArrowRight, Beaker, Code, Lightbulb, PuzzleIcon as PuzzlePiece, Globe } from "lucide-react"
 
 export default function Home() {
   return (
@@ -19,12 +19,12 @@ export default function Home() {
                 technology, engineering, and math.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/register">
+                <Link href="/contact">
                   <Button
                     size="lg"
                     className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6"
                   >
-                    Register Now <ArrowRight className="ml-2 h-5 w-5" />
+                    Contact Us <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
                 <Link href="/global/about">
@@ -68,43 +68,6 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Main Summer Camp Event */}
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg shadow-lg overflow-hidden border-2 border-blue-200">
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-4">
-                  <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">Featured</span>
-                  <span className="text-blue-600 font-bold">FREE</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Summer STEM Camp 2025</h3>
-                <p className="text-gray-700 mb-4">
-                  Our flagship 2-day hands-on STEM camp for elementary students featuring chemistry experiments, coding, and engineering challenges.
-                </p>
-                <div className="space-y-2 text-sm text-gray-600 mb-4">
-                  <div className="flex items-center">
-                    <span className="font-medium mr-2">📅</span>
-                    <span>August 9-10, 2025</span>
-                  </div>
-                  <div className="flex items-center">
-                    <span className="font-medium mr-2">🕐</span>
-                    <span>11:00 AM - 1:00 PM</span>
-                  </div>
-                  <div className="flex items-center">
-                    <span className="font-medium mr-2">📍</span>
-                    <span>Westford, MA</span>
-                  </div>
-                  <div className="flex items-center">
-                    <span className="font-medium mr-2">👥</span>
-                    <span>Ages 8-14</span>
-                  </div>
-                </div>
-                <Link href="/events/summer-stem-camp-2025">
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
-                    Learn More & Register
-                  </Button>
-                </Link>
-              </div>
-            </div>
-
             {/* Africa Global Camp */}
             <div className="bg-gradient-to-br from-green-50 to-yellow-50 rounded-lg shadow-lg overflow-hidden border-2 border-green-200">
               <div className="p-6">
@@ -112,22 +75,23 @@ export default function Home() {
                   <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">Global</span>
                   <span className="text-green-600 font-bold">FREE</span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">First Global Camp - Africa</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Global Camp - Africa</h3>
                 <p className="text-gray-700 mb-4">
-                  Our inaugural virtual STEM camp for students across Africa, featuring hands-on experiments and coding activities delivered online.
+                  Virtual STEM camp for students across Africa, featuring hands-on experiments and coding activities
+                  delivered online.
                 </p>
                 <div className="space-y-2 text-sm text-gray-600 mb-4">
                   <div className="flex items-center">
                     <span className="font-medium mr-2">📅</span>
-                    <span>Coming Soon</span>
+                    <span>September 20, 2025</span>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="font-medium mr-2">🕐</span>
+                    <span>8:00 AM - 12:00 PM EST</span>
                   </div>
                   <div className="flex items-center">
                     <span className="font-medium mr-2">🌐</span>
                     <span>Online via Google Meet</span>
-                  </div>
-                  <div className="flex items-center">
-                    <span className="font-medium mr-2">🌍</span>
-                    <span>Africa-wide</span>
                   </div>
                   <div className="flex items-center">
                     <span className="font-medium mr-2">👥</span>
@@ -135,9 +99,7 @@ export default function Home() {
                   </div>
                 </div>
                 <Link href="/events/global-africa-camp">
-                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
-                    Learn More & Register
-                  </Button>
+                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white">Learn More & Register</Button>
                 </Link>
               </div>
             </div>
@@ -159,11 +121,32 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+
+            {/* Another placeholder */}
+            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg shadow-lg overflow-hidden border-2 border-dashed border-gray-300">
+              <div className="p-6 text-center">
+                <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🔬</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Future Programs</h3>
+                <p className="text-gray-600 mb-4">
+                  We're developing new STEM programs and partnerships. Contact us to learn more!
+                </p>
+                <Link href="/contact">
+                  <Button variant="outline" className="bg-transparent border-gray-400 text-gray-600 hover:bg-gray-100">
+                    Contact Us
+                  </Button>
+                </Link>
+              </div>
+            </div>
           </div>
 
           <div className="text-center mt-12">
             <Link href="/events">
-              <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white bg-transparent">
+              <Button
+                variant="outline"
+                className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white bg-transparent"
+              >
                 View All Events <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
@@ -260,10 +243,15 @@ export default function Home() {
                 <Beaker className="h-16 w-16 text-white" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Chemistry Experiments</h3>
-                <p className="text-gray-700">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Science Experiments</h3>
+                <p className="text-gray-700 mb-4">
                   Safe and exciting experiments that demonstrate chemical reactions and properties.
                 </p>
+                <ul className="text-gray-700 space-y-1">
+                  <li>• Devils Toothpaste (elephant toothpaste)</li>
+                  <li>• Cabbage pH indicator</li>
+                  <li>• Inflatable balloon experiments</li>
+                </ul>
               </div>
             </div>
 
@@ -273,9 +261,12 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Engineering Projects</h3>
-                <p className="text-gray-700">
-                  Design and build structures like bridges and towers using various materials.
-                </p>
+                <p className="text-gray-700 mb-4">Design and build structures using various materials.</p>
+                <ul className="text-gray-700 space-y-1">
+                  <li>• Learn about bridges</li>
+                  <li>• Make bridges from popsicle sticks</li>
+                  <li>• Structural engineering basics</li>
+                </ul>
               </div>
             </div>
 
@@ -285,9 +276,12 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Coding & Robotics</h3>
-                <p className="text-gray-700">
-                  Introduction to basic programming concepts and simple robotics challenges.
-                </p>
+                <p className="text-gray-700 mb-4">Introduction to programming concepts and challenges.</p>
+                <ul className="text-gray-700 space-y-1">
+                  <li>• Block coding</li>
+                  <li>• Python programming</li>
+                  <li>• Interactive coding projects</li>
+                </ul>
               </div>
             </div>
 
@@ -322,11 +316,11 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to join our STEM adventure?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Registration is now open for our free summer camp. Spaces are limited, so sign up today!
+            Contact us to learn about upcoming camps and programs. We're always planning new STEM experiences!
           </p>
-          <Link href="/register">
+          <Link href="/contact">
             <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6">
-              Register Now <ArrowRight className="ml-2 h-5 w-5" />
+              Contact Us <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </Link>
         </div>

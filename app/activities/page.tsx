@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Code, Lightbulb, PuzzleIcon as PuzzlePiece, Globe } from "lucide-react"
+import { ArrowRight, Code, Lightbulb, PuzzleIcon as PuzzlePiece, Globe, Beaker } from "lucide-react"
 
 export default function Activities() {
   return (
@@ -29,57 +29,35 @@ export default function Activities() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Science Experiments */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+              <div className="h-48 bg-blue-600 flex items-center justify-center">
+                <Beaker className="h-16 w-16 text-white" />
+              </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Chemistry Experiments</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Science Experiments</h3>
                 <p className="text-gray-700 mb-4">
                   Safe and exciting experiments that demonstrate chemical reactions and properties. Students will create
-                  colorful reactions, learn about acids and bases, and make their own slime!
+                  colorful reactions and learn about scientific principles!
                 </p>
                 <ul className="text-gray-700 mb-4">
                   <li className="flex items-start mb-2">
                     <span className="text-blue-600 mr-2">•</span>
-                    <span>Colorful chemical reactions</span>
+                    <span>Devils Toothpaste (elephant toothpaste)</span>
                   </li>
                   <li className="flex items-start mb-2">
                     <span className="text-blue-600 mr-2">•</span>
-                    <span>Making and testing slime</span>
+                    <span>Cabbage pH indicator</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">•</span>
-                    <span>Learning about acids and bases</span>
+                    <span>Inflatable balloon experiments</span>
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Collaborative STEM Projects</h3>
-                <p className="text-gray-700 mb-4">
-                  Students work together on exciting projects that combine multiple STEM disciplines. From building and
-                  programming robots to conducting experiments and constructing models.
-                </p>
-                <ul className="text-gray-700 mb-4">
-                  <li className="flex items-start mb-2">
-                    <span className="text-purple-600 mr-2">•</span>
-                    <span>Robotics programming</span>
-                  </li>
-                  <li className="flex items-start mb-2">
-                    <span className="text-purple-600 mr-2">•</span>
-                    <span>Structural engineering challenges</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-purple-600 mr-2">•</span>
-                    <span>Team-based problem solving</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Engineering Projects */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
               <div className="h-48 bg-purple-600 flex items-center justify-center">
@@ -88,21 +66,21 @@ export default function Activities() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Engineering Projects</h3>
                 <p className="text-gray-700 mb-4">
-                  Design and build structures like bridges and towers using various materials. Students will learn about
-                  structural integrity, weight distribution, and problem-solving.
+                  Design and build structures using various materials. Students will learn about structural integrity,
+                  weight distribution, and problem-solving through hands-on engineering challenges.
                 </p>
                 <ul className="text-gray-700 mb-4">
                   <li className="flex items-start mb-2">
                     <span className="text-purple-600 mr-2">•</span>
-                    <span>Bridge building challenge</span>
+                    <span>Learn about bridges</span>
                   </li>
                   <li className="flex items-start mb-2">
                     <span className="text-purple-600 mr-2">•</span>
-                    <span>Egg drop protection design</span>
+                    <span>Make bridges from popsicle sticks</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-purple-600 mr-2">•</span>
-                    <span>Paper tower construction</span>
+                    <span>Structural engineering basics</span>
                   </li>
                 </ul>
               </div>
@@ -116,21 +94,21 @@ export default function Activities() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Coding & Robotics</h3>
                 <p className="text-gray-700 mb-4">
-                  Introduction to basic programming concepts and simple robotics challenges. Students will learn logical
-                  thinking and problem-solving through fun coding activities.
+                  Introduction to programming concepts and challenges. Students will learn logical thinking and
+                  problem-solving through fun coding activities.
                 </p>
                 <ul className="text-gray-700 mb-4">
                   <li className="flex items-start mb-2">
                     <span className="text-yellow-500 mr-2">•</span>
-                    <span>Block-based programming</span>
+                    <span>Block coding</span>
                   </li>
                   <li className="flex items-start mb-2">
                     <span className="text-yellow-500 mr-2">•</span>
-                    <span>Simple robot navigation</span>
+                    <span>Python programming</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-yellow-500 mr-2">•</span>
-                    <span>Creating interactive stories</span>
+                    <span>Interactive coding projects</span>
                   </li>
                 </ul>
               </div>
@@ -167,11 +145,11 @@ export default function Activities() {
         </div>
       </section>
 
-      {/* Daily Schedule */}
+      {/* Sample Schedules */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Sample Daily Schedules</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Sample Schedules</h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               Here's what typical days at our camp look like. Activities vary each day to keep learning fresh and
               exciting!
@@ -182,7 +160,7 @@ export default function Activities() {
             {/* Day 1 Schedule */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="bg-blue-600 text-white p-4">
-                <h3 className="text-xl font-bold">August 9 Camp Schedule (Science and Coding)</h3>
+                <h3 className="text-xl font-bold">Day 1 Schedule (Science and Coding)</h3>
               </div>
               <div className="p-6">
                 <div className="space-y-4">
@@ -192,7 +170,7 @@ export default function Activities() {
                   </div>
                   <div className="grid grid-cols-4 gap-4 items-center">
                     <div className="font-bold text-blue-600">11:00 - 11:15</div>
-                    <div className="col-span-3">Camp Start (Intoduction)</div>
+                    <div className="col-span-3">Camp Start (Introduction)</div>
                   </div>
                   <div className="grid grid-cols-4 gap-4 items-center">
                     <div className="font-bold text-blue-600">11:15 - 11:25</div>
@@ -200,15 +178,15 @@ export default function Activities() {
                   </div>
                   <div className="grid grid-cols-4 gap-4 items-center">
                     <div className="font-bold text-blue-600">11:30 - 12:00</div>
-                    <div className="col-span-3">Experiment 1 - Cabbage PH Indicator</div>
+                    <div className="col-span-3">Experiment 1 - Cabbage pH Indicator</div>
                   </div>
                   <div className="grid grid-cols-4 gap-4 items-center">
                     <div className="font-bold text-blue-600">12:00 - 12:20</div>
-                    <div className="col-span-3">Experiment 1 - Cabbage PH Indicator</div>
+                    <div className="col-span-3">Experiment 2 - Devils Toothpaste</div>
                   </div>
                   <div className="grid grid-cols-4 gap-4 items-center">
                     <div className="font-bold text-blue-600">12:20 - 1:00</div>
-                    <div className="col-span-3">Coding - Micro:Bit</div>
+                    <div className="col-span-3">Coding - Block Coding & Python</div>
                   </div>
                   <div className="grid grid-cols-4 gap-4 items-center">
                     <div className="font-bold text-blue-600">1:00 PM</div>
@@ -225,7 +203,7 @@ export default function Activities() {
             {/* Day 2 Schedule */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="bg-green-600 text-white p-4">
-                <h3 className="text-xl font-bold">August 10 Camp Schedule (Engineering and Science Fair)</h3>
+                <h3 className="text-xl font-bold">Day 2 Schedule (Engineering and Science Fair)</h3>
               </div>
               <div className="p-6">
                 <div className="space-y-4">
@@ -235,11 +213,11 @@ export default function Activities() {
                   </div>
                   <div className="grid grid-cols-4 gap-4 items-center">
                     <div className="font-bold text-green-600">11:00 - 11:45</div>
-                    <div className="col-span-3">Learning about Engineering & Building</div>
+                    <div className="col-span-3">Learning about Engineering & Bridges</div>
                   </div>
                   <div className="grid grid-cols-4 gap-4 items-center">
                     <div className="font-bold text-green-600">11:45 - 12:20</div>
-                    <div className="col-span-3">Building time for Science Fair</div>
+                    <div className="col-span-3">Building Bridges from Popsicle Sticks</div>
                   </div>
                   <div className="grid grid-cols-4 gap-4 items-center">
                     <div className="font-bold text-green-600">12:20 - 12:40</div>
@@ -269,12 +247,12 @@ export default function Activities() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to join our STEM adventure?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Registration is now open for our free summer camp. Spaces are limited, so sign up today!
+            Contact us to learn about upcoming camps and programs. We're always planning new STEM experiences!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/register">
+            <Link href="/contact">
               <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6">
-                Register Now <ArrowRight className="ml-2 h-5 w-5" />
+                Contact Us <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
             <Link href="/global/about">

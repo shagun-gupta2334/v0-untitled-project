@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Spark for STEM - Free Summer Camp for Elementary Students",
   description:
     "A student-led, nonprofit summer camp designed to spark curiosity and build foundational STEM skills through hands-on activities.",
-    generator: 'v0.dev'
+    generator: 'v0.app'
 }
 
 export default function RootLayout({

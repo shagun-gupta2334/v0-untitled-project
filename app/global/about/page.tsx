@@ -1,7 +1,6 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Globe, Users, Heart } from "lucide-react"
+import { ArrowRight, MapPin, Mail, Users, Globe } from "lucide-react"
 
 export default function GlobalAbout() {
   return (
@@ -10,343 +9,202 @@ export default function GlobalAbout() {
       <section className="bg-gradient-to-r from-green-600 to-blue-600 py-20 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Spark for STEM Global Initiative</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Spark for STEM Global</h1>
             <p className="text-xl opacity-90">
-              Expanding STEM education worldwide through student-led initiatives and international collaboration.
+              Expanding STEM education worldwide through virtual programs and international partnerships.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Mission Section */}
+      {/* Global Presence */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Global Mission</h2>
-              <div className="w-24 h-1 bg-green-500 mx-auto mb-6"></div>
-              <p className="text-lg text-gray-700">
-                Spark for STEM Global represents our commitment to making quality STEM education accessible to young
-                learners around the world. Through partnerships with local student organizations and educational
-                institutions, we're building a network of student-led STEM initiatives that transcend borders.
-              </p>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Global Presence</h2>
+            <div className="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              Spark for STEM is expanding beyond borders to bring quality STEM education to young learners around the
+              world.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* USA */}
+            <div className="bg-blue-50 p-6 rounded-lg shadow-md text-center">
+              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🇺🇸</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">USA</h3>
+              <p className="text-gray-700 mb-4">Our home base with in-person camps and programs.</p>
+              <div className="text-sm text-gray-600">
+                <div className="flex items-center justify-center mb-1">
+                  <MapPin className="h-4 w-4 mr-1" />
+                  <span>Westford, MA</span>
+                </div>
+              </div>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <div className="text-center">
-                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Globe className="h-8 w-8 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Global Reach</h3>
-                <p className="text-gray-700">
-                  Connecting students across continents to share knowledge, resources, and innovative teaching methods.
-                </p>
+            {/* Africa */}
+            <div className="bg-green-50 p-6 rounded-lg shadow-md text-center">
+              <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🌍</span>
               </div>
-
-              <div className="text-center">
-                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="h-8 w-8 text-green-600" />
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Africa</h3>
+              <p className="text-gray-700 mb-4">Expanding STEM education across the continent.</p>
+              <div className="text-sm text-gray-600">
+                <div className="flex items-center justify-center mb-1">
+                  <MapPin className="h-4 w-4 mr-1" />
+                  <span>Ghana</span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Student Leadership</h3>
-                <p className="text-gray-700">
-                  Empowering high school students worldwide to become STEM educators and mentors in their communities.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Heart className="h-8 w-8 text-purple-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Cultural Exchange</h3>
-                <p className="text-gray-700">
-                  Fostering cross-cultural understanding through collaborative STEM projects and shared learning
-                  experiences.
-                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Registration Section */}
-      <section className="py-16 bg-blue-50">
+      {/* Programs Overview */}
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Join Our Global Programs</h2>
-              <div className="w-24 h-1 bg-green-500 mx-auto mb-6"></div>
-              <p className="text-lg text-gray-700 mb-8">
-                If you don't live in the USA and would like to join our STEM programs, explore our partnerships:
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Global Programs</h2>
+            <div className="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              Our international programs are designed to be culturally relevant while maintaining the same high-quality
+              STEM education standards.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Virtual Camps */}
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Virtual STEM Camps</h3>
+              <p className="text-gray-700 mb-6">
+                Interactive online camps that bring the Spark for STEM experience directly to students' homes, featuring
+                live experiments, coding sessions, and engineering challenges.
               </p>
+              <ul className="text-gray-700 space-y-2">
+                <li>• Live interactive sessions via Google Meet</li>
+                <li>• Materials list provided to participants in advance</li>
+                <li>• Small group sizes for personalized attention</li>
+                <li>• Culturally relevant examples and applications</li>
+              </ul>
             </div>
 
-            <div className="bg-white rounded-lg shadow-md p-8">
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Available Programs</h3>
-                  <div className="space-y-4">
-                    <div className="flex items-center p-4 bg-blue-50 rounded-lg">
-                      <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-white font-bold">🇺🇸</span>
-                      </div>
-                      <div className="flex-1">
-                        <h4 className="font-bold text-gray-900">USA Program</h4>
-                        <p className="text-sm text-gray-500">Ages 8-14 • Free registration</p>
-                      </div>
-                      <a href="https://forms.gle/2dkNANqne474wtc98" target="_blank" rel="noopener noreferrer">
-                        <Button className="bg-blue-600 hover:bg-blue-700 text-white">Register for USA</Button>
-                      </a>
-                    </div>
+            {/* Partnership Programs */}
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Partnership Programs</h3>
+              <p className="text-gray-700 mb-6">
+                Collaborative initiatives with local organizations, schools, and non-profits to expand our reach and
+                create sustainable STEM education programs.
+              </p>
+              <ul className="text-gray-700 space-y-2">
+                <li>• Local organization partnerships</li>
+                <li>• Teacher training and support</li>
+                <li>• Curriculum adaptation for local contexts</li>
+                <li>• Community-based program implementation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    <div className="flex items-center p-4 bg-orange-50 rounded-lg">
-                      <div className="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-white font-bold">🇮🇳</span>
-                      </div>
-                      <div className="flex-1">
-                        <h4 className="font-bold text-gray-900">India Program</h4>
-                        <p className="text-sm text-gray-500">Coming Soon</p>
-                      </div>
-                      <Link href="/global/india">
-                        <Button className="bg-orange-600 hover:bg-orange-700 text-white">
-                          Partner with us from India
-                        </Button>
-                      </Link>
-                    </div>
+      {/* How to Get Involved */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">How to Get Involved</h2>
+            <div className="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              Whether you're a student, educator, organization, or supporter, there are many ways to join our global
+              STEM education mission.
+            </p>
+          </div>
 
-                    <div className="flex items-center p-4 bg-green-50 rounded-lg">
-                      <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-white font-bold">🌍</span>
-                      </div>
-                      <div className="flex-1">
-                        <h4 className="font-bold text-gray-900">Africa Program</h4>
-                        <p className="text-sm text-gray-500">Coming Soon</p>
-                      </div>
-                      <Link href="/global/africa">
-                        <Button className="bg-green-600 hover:bg-green-700 text-white">
-                          Partner with us from Africa
-                        </Button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="text-center">
-                  <Image
-                    src="/images/stem-activities-group.png"
-                    alt="Global STEM programs"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg mx-auto"
-                  />
-                </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* For Students */}
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-white" />
               </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">For Students</h3>
+              <p className="text-gray-700 mb-6">
+                Join our virtual camps and programs to explore STEM concepts through hands-on activities and connect
+                with peers globally.
+              </p>
+              <Link href="/events">
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white">View Programs</Button>
+              </Link>
             </div>
 
-            <div className="text-center mt-8">
-              <p className="text-gray-600 mb-4">
-                Don't see your location? We're always looking to expand our global reach.
+            {/* For Organizations */}
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Globe className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">For Organizations</h3>
+              <p className="text-gray-700 mb-6">
+                Partner with us to bring STEM education to your community through collaborative programs and
+                initiatives.
               </p>
               <Link href="/contact">
-                <Button
-                  variant="outline"
-                  className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white bg-transparent"
-                >
-                  Contact Us About New Locations
-                </Button>
+                <Button className="bg-green-600 hover:bg-green-700 text-white">Partner With Us</Button>
+              </Link>
+            </div>
+
+            {/* For Supporters */}
+            <div className="text-center">
+              <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Mail className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">For Supporters</h3>
+              <p className="text-gray-700 mb-6">
+                Support our mission by helping us expand our reach, sponsor materials, or connect us with potential
+                partners.
+              </p>
+              <Link href="/contact">
+                <Button className="bg-purple-600 hover:bg-purple-700 text-white">Support Us</Button>
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* World Map Section */}
+      {/* Regional Programs */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Global Presence</h2>
-              <div className="w-24 h-1 bg-green-500 mx-auto mb-6"></div>
-              <p className="text-lg text-gray-700">
-                Discover our growing network of STEM initiatives across continents.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <div className="grid md:grid-cols-3 gap-6 mt-8 max-w-4xl mx-auto">
-                <Link
-                  href="/register"
-                  className="text-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
-                >
-                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <span className="text-white font-bold">🇺🇸</span>
-                  </div>
-                  <h4 className="font-bold text-gray-900">USA</h4>
-                  <p className="text-sm text-gray-600">Westford, Massachusetts</p>
-                  <p className="text-xs text-gray-500 mt-1">50+ students served</p>
-                </Link>
-
-                <Link
-                  href="/global/india"
-                  className="text-center p-4 bg-orange-50 rounded-lg hover:bg-orange-100 transition-colors"
-                >
-                  <div className="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <span className="text-white font-bold">🇮🇳</span>
-                  </div>
-                  <h4 className="font-bold text-gray-900">India</h4>
-                  <p className="text-xs text-gray-500 mt-1">Coming Soon</p>
-                </Link>
-
-                <Link
-                  href="/global/africa"
-                  className="text-center p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors"
-                >
-                  <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <span className="text-white font-bold">🌍</span>
-                  </div>
-                  <h4 className="font-bold text-gray-900">Africa</h4>
-                  <p className="text-xs text-gray-500 mt-1">Coming Soon</p>
-                </Link>
-              </div>
-            </div>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Regional Programs</h2>
+            <div className="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              Explore our region-specific programs designed to meet the unique needs and interests of students in
+              different parts of the world.
+            </p>
           </div>
-        </div>
-      </section>
 
-      {/* FAQ Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
-              <div className="w-24 h-1 bg-green-500 mx-auto mb-6"></div>
-              <p className="text-lg text-gray-700">Common questions about our global STEM programs and initiatives.</p>
-            </div>
-
-            <div className="space-y-6">
-              <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  How is the experience going to be Hands-On for me?
-                </h3>
-                <p className="text-gray-700">
-                  To ensure every child can fully participate in our hands-on activities, we'll provide a PDF in advance
-                  with a list of all the materials you'll need. During the programs, we'll guide students step-by-step
-                  through each experiment.
-                </p>
+          <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
+            {/* Africa Program */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="bg-gradient-to-r from-green-600 to-yellow-600 p-6 text-white">
+                <h3 className="text-2xl font-bold mb-2">Spark for STEM Africa</h3>
+                <p className="opacity-90">Innovative STEM solutions for African communities</p>
               </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Are the global programs really free?</h3>
-                <p className="text-gray-700">
-                  Yes! All our STEM programs worldwide are completely free. We believe in making quality STEM education
-                  accessible to everyone, regardless of financial background.
+              <div className="p-6">
+                <p className="text-gray-700 mb-4">
+                  Our Africa program focuses on practical STEM applications that address real challenges faced by
+                  African communities while fostering innovation and creativity.
                 </p>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  What age groups can participate in global programs?
-                </h3>
-                <p className="text-gray-700">
-                  Our programs are designed for ages 8-14. Some programs may have slight variations based on local
-                  educational systems and needs.
-                </p>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Do I need any prior STEM knowledge to join?</h3>
-                <p className="text-gray-700">
-                  Not at all! Our programs are designed for beginners and aim to introduce STEM concepts in a fun,
-                  accessible way. All skill levels are welcome.
-                </p>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Will photos be taken during the program?</h3>
-                <p className="text-gray-700">
-                  Yes — with permission from parents, we may take photos during the camp to share on our website and
-                  social media. No names will ever be posted.
-                </p>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Are the programs conducted in English?</h3>
-                <p className="text-gray-700">
-                  While our primary language is English, we try to adapt our programs to local needs. If needed please
-                  try to keep a translator nearby.
-                </p>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">How can I support the camp?</h3>
-                <p className="text-gray-700">
-                  We're grateful for any support! You can support us by donating supplies, sponsoring materials, or
-                  connecting us with potential sponsors. Contact us via email to discuss how you can help keep our camp
-                  free and fun!
-                </p>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Can parents volunteer at the camp?</h3>
-                <p className="text-gray-700 mb-3">
-                  We accept up to 3 parent volunteers to help support our student-led camp with logistics and safety
-                  supervision.
-                </p>
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSeP_JtPWP6WAIVN5_7N7GOSWZOJZ_6FLAG0yoXxhJDWs-cDVQ/viewform"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
-                >
-                  Apply to be a parent volunteer →
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Impact Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Global Impact</h2>
-              <div className="w-24 h-1 bg-green-500 mx-auto mb-6"></div>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Building Bridges Through STEM</h3>
-                <p className="text-lg text-gray-700 mb-6">
-                  Our global initiative connects young minds across different cultures, languages, and backgrounds
-                  through the universal language of science, technology, engineering, and mathematics.
-                </p>
-                <ul className="space-y-4 text-gray-700">
-                  <li className="flex items-start">
-                    <span className="text-green-500 mr-2">•</span>
-                    <span>Cross-cultural STEM project collaborations</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-500 mr-2">•</span>
-                    <span>Virtual exchange programs for student educators</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-500 mr-2">•</span>
-                    <span>Shared resources and curriculum development</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-500 mr-2">•</span>
-                    <span>International mentorship networks</span>
-                  </li>
+                <ul className="text-gray-700 space-y-2 mb-6">
+                  <li>• Sustainable technology projects</li>
+                  <li>• Environmental science initiatives</li>
+                  <li>• Community-focused engineering solutions</li>
+                  <li>• Cross-cultural collaboration</li>
                 </ul>
-              </div>
-              <div className="flex justify-center">
-                <Image
-                  src="/images/stem-chemistry-illustration.png"
-                  alt="Global STEM collaboration"
-                  width={500}
-                  height={400}
-                  className="rounded-lg shadow-lg"
-                />
+                <Link href="/global/africa">
+                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
+                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -354,17 +212,29 @@ export default function GlobalAbout() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-green-600 to-blue-600 text-white">
+      <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-700 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Global Movement</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Global STEM Community</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Be part of a worldwide network of student educators making STEM accessible to all.
+            Be part of a worldwide movement to make STEM education accessible, engaging, and impactful for young
+            learners everywhere.
           </p>
-          <Link href="/contact">
-            <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6">
-              Get Involved <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/events">
+              <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6">
+                View Programs <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-black hover:bg-white hover:text-blue-600 font-bold text-lg px-8 py-6 bg-transparent"
+              >
+                Contact Us
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
     </main>

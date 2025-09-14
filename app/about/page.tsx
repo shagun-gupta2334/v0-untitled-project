@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, MapPin, Globe } from "lucide-react"
+import { ArrowRight, Globe } from "lucide-react"
 
 export default function About() {
   return (
@@ -101,68 +101,28 @@ export default function About() {
         </div>
       </section>
 
-      {/* Camp Details with Map */}
+      {/* Our Impact */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Camp Details</h2>
-            <p className="text-lg text-gray-700 mb-6">
-              Here's everything you need to know about Spark for STEM, including dates, times, location, and important
-              information for parents and guardians.
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Impact</h2>
+            <p className="text-lg text-gray-700 mb-8">
+              Since our founding, Spark for STEM has been dedicated to making STEM education accessible and engaging for
+              young learners. Through our camps and programs, we've inspired students to explore science, technology,
+              engineering, and mathematics in fun and meaningful ways.
             </p>
-            <ul className="space-y-4 text-lg text-gray-700 mb-10">
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
-                <span>Dates: August 9–10, 2025</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
-                <span>Time: 11:00 AM – 1:00 PM (drop-off starts at 10:30 AM)</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
-                <span>
-                  Location: The Roudenbush Community Center, 65 Main Street, Westford, MA 01886 — Room 105 (August 9-10,
-                  2025 only)
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
-                <span>Who Can Attend: Kids ages 8–14</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
-                <span>Cost: Free</span>
-              </li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Camp Location</h3>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-6">
-              <div className="aspect-w-16 aspect-h-9 relative h-[400px]">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2946.0254673262584!2d-71.43831199999999!3d42.5831587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3bd68267b31f7%3A0x5be2c174c897e24f!2sThe%20Roudenbush%20Community%20Center%2C%20Inc!5e0!3m2!1sen!2sus!4v1716733000000!5m2!1sen!2sus"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen={false}
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="absolute inset-0 w-full h-full"
-                  title="Camp Location Map"
-                ></iframe>
+            <div className="grid md:grid-cols-3 gap-8 mt-12">
+              <div className="text-center">
+                <div className="text-4xl font-bold text-blue-600 mb-2">1</div>
+                <p className="text-gray-700">Year of Impact</p>
               </div>
-              <div className="p-4 bg-blue-50">
-                <div className="flex items-center text-blue-700">
-                  <MapPin className="h-5 w-5 mr-2" />
-                  <a
-                    href="https://www.google.com/maps/place/The+Roudenbush+Community+Center,+Inc/@42.5831587,-71.438312,17z/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-medium hover:underline"
-                  >
-                    The Roudenbush Community Center, Inc
-                  </a>
-                </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-green-600 mb-2">100+</div>
+                <p className="text-gray-700">Students Reached</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-purple-600 mb-2">10+</div>
+                <p className="text-gray-700">STEM Activities</p>
               </div>
             </div>
           </div>
@@ -174,12 +134,12 @@ export default function About() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our STEM Adventure</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Registration is now open for our free summer camp. Spaces are limited, so sign up today!
+            Learn more about our programs and how you can get involved in bringing STEM education to young learners.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/register">
+            <Link href="/contact">
               <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6">
-                Register Now <ArrowRight className="ml-2 h-5 w-5" />
+                Contact Us <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
             <Link href="/global/about">
@@ -188,7 +148,7 @@ export default function About() {
                 variant="outline"
                 className="border-white text-black hover:bg-white hover:text-blue-600 font-bold text-lg px-8 py-6 bg-transparent"
               >
-                Register - Out of USA <Globe className="ml-2 h-5 w-5" />
+                Partner with us - Globally <Globe className="ml-2 h-5 w-5" />
               </Button>
             </Link>
           </div>

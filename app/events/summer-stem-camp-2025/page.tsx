@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, ArrowLeft, Calendar, Clock, MapPin, Users, CheckCircle, AlertCircle, Globe } from 'lucide-react'
+import { ArrowLeft, Calendar, Clock, MapPin, Users, CheckCircle } from "lucide-react"
 
 export default function SummerSTEMCamp2025() {
   return (
@@ -11,7 +11,10 @@ export default function SummerSTEMCamp2025() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="mb-6">
-              <Link href="/events" className="inline-flex items-center text-white hover:text-yellow-400 transition-colors">
+              <Link
+                href="/events"
+                className="inline-flex items-center text-white hover:text-yellow-400 transition-colors"
+              >
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Back to Events
               </Link>
@@ -19,20 +22,16 @@ export default function SummerSTEMCamp2025() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <div className="flex items-center mb-4">
-                  <span className="bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-bold mr-4">FEATURED EVENT</span>
+                  <span className="bg-gray-500 text-white px-4 py-2 rounded-full text-sm font-bold mr-4">
+                    COMPLETED
+                  </span>
                   <span className="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-bold">FREE</span>
                 </div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">Summer STEM Camp 2025</h1>
                 <p className="text-xl opacity-90 mb-6">
-                  Join us for two exciting days of hands-on STEM learning featuring chemistry experiments, coding challenges, engineering projects, and a science fair showcase!
+                  Our completed flagship camp featured two exciting days of hands-on STEM learning with chemistry
+                  experiments, coding challenges, engineering projects, and a science fair showcase!
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/register">
-                    <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6">
-                      Register Now <ArrowRight className="ml-2 h-5 w-5" />
-                    </Button>
-                  </Link>
-                </div>
               </div>
               <div className="flex justify-center">
                 <Image
@@ -70,7 +69,7 @@ export default function SummerSTEMCamp2025() {
                       <div>
                         <h4 className="font-bold text-gray-900">Time</h4>
                         <p className="text-gray-700">11:00 AM - 1:00 PM daily</p>
-                        <p className="text-sm text-gray-600">Drop-off starts at 10:30 AM</p>
+                        <p className="text-sm text-gray-600">Drop-off started at 10:30 AM</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -105,16 +104,17 @@ export default function SummerSTEMCamp2025() {
                     <CheckCircle className="h-5 w-5 text-green-400 mr-2 mt-0.5" />
                     <div>
                       <p className="text-sm text-green-700">
-                        <strong>Completely Free!</strong> All materials, activities, and snacks are provided at no cost to families.
+                        <strong>Successfully Completed!</strong> This camp was completely free and all materials,
+                        activities, and snacks were provided at no cost to families.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* What to Expect */}
+              {/* What Happened */}
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">What to Expect</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">What Happened</h2>
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-3">Day 1: Science & Coding (August 9)</h3>
@@ -129,7 +129,11 @@ export default function SummerSTEMCamp2025() {
                       </li>
                       <li className="flex items-start">
                         <span className="text-blue-600 mr-2">•</span>
-                        <span>Hands-on Coding with Micro:bit</span>
+                        <span>Devils Toothpaste (Elephant Toothpaste) Experiment</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-600 mr-2">•</span>
+                        <span>Hands-on Coding with Block Coding & Python</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-blue-600 mr-2">•</span>
@@ -139,11 +143,17 @@ export default function SummerSTEMCamp2025() {
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">Day 2: Engineering & Science Fair (August 10)</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">
+                      Day 2: Engineering & Science Fair (August 10)
+                    </h3>
                     <ul className="space-y-2 text-gray-700">
                       <li className="flex items-start">
                         <span className="text-purple-600 mr-2">•</span>
-                        <span>Engineering Principles & Building Challenges</span>
+                        <span>Engineering Principles & Learning about Bridges</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-purple-600 mr-2">•</span>
+                        <span>Building Bridges from Popsicle Sticks</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-purple-600 mr-2">•</span>
@@ -166,91 +176,43 @@ export default function SummerSTEMCamp2025() {
         </div>
       </section>
 
-      {/* Rules and Requirements */}
+      {/* Camp Success */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Rules & Requirements</h2>
-            
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* What to Bring */}
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">What to Bring</h3>
-                <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                    <span>Curiosity and enthusiasm for learning!</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                    <span>Comfortable clothes that can get a little messy</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                    <span>Completed registration form and waiver</span>
-                  </li>
-                </ul>
-                <div className="mt-4 p-3 bg-blue-50 rounded-lg">
-                  <p className="text-sm text-blue-700">
-                    <strong>Note:</strong> All materials for activities will be provided by Spark for STEM.
-                  </p>
-                </div>
-              </div>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Camp Success</h2>
 
-              {/* Camp Rules */}
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Camp Rules</h3>
-                <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-start">
-                    <AlertCircle className="h-5 w-5 text-orange-500 mr-2 mt-0.5" />
-                    <span>Follow safety instructions during all experiments</span>
-                  </li>
-                  <li className="flex items-start">
-                    <AlertCircle className="h-5 w-5 text-orange-500 mr-2 mt-0.5" />
-                    <span>Respect fellow campers and instructors</span>
-                  </li>
-                  <li className="flex items-start">
-                    <AlertCircle className="h-5 w-5 text-orange-500 mr-2 mt-0.5" />
-                    <span>Stay with your assigned group at all times</span>
-                  </li>
-                  <li className="flex items-start">
-                    <AlertCircle className="h-5 w-5 text-orange-500 mr-2 mt-0.5" />
-                    <span>Ask questions and participate actively</span>
-                  </li>
-                  <li className="flex items-start">
-                    <AlertCircle className="h-5 w-5 text-orange-500 mr-2 mt-0.5" />
-                    <span>Clean up after activities</span>
-                  </li>
-                </ul>
-                <div className="mt-4 p-3 bg-yellow-50 rounded-lg">
-                  <p className="text-sm text-yellow-700">
-                    <strong>Parent/Guardian:</strong> Must remain on-site or be available by phone during camp hours.
-                  </p>
+            <div className="bg-white rounded-lg shadow-md p-8 mb-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">What Made It Special</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-2">Student Engagement</h4>
+                  <ul className="space-y-1 text-gray-700 text-sm">
+                    <li>• Enthusiastic participants ages 8-14</li>
+                    <li>• High engagement in all activities</li>
+                    <li>• Positive feedback from students and parents</li>
+                    <li>• Students created amazing bridge designs</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-2">Learning Outcomes</h4>
+                  <ul className="space-y-1 text-gray-700 text-sm">
+                    <li>• Hands-on chemistry experiment experience</li>
+                    <li>• Introduction to programming concepts</li>
+                    <li>• Engineering design thinking skills</li>
+                    <li>• Presentation and communication skills</li>
+                  </ul>
                 </div>
               </div>
             </div>
 
-            {/* Additional Information */}
-            <div className="mt-8 bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Additional Information</h3>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-bold text-gray-900 mb-2">Registration</h4>
-                  <ul className="space-y-1 text-gray-700 text-sm">
-                    <li>• Registration is first-come, first-served</li>
-                    <li>• Limited to 30 participants</li>
-                    <li>• Registration closes 2 weeks before camp or when full</li>
-                    <li>• Waitlist available if camp fills up</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-bold text-gray-900 mb-2">Safety & Photos</h4>
-                  <ul className="space-y-1 text-gray-700 text-sm">
-                    <li>• All activities supervised by trained instructors</li>
-                    <li>• Parent volunteers welcome (up to 3 spots)</li>
-                    <li>• Photos may be taken for website/social media with permission </li>
-                    <li>• No names will be posted with photos</li>
-                  </ul>
+            <div className="bg-blue-50 border-l-4 border-blue-400 p-6">
+              <div className="flex">
+                <div className="ml-3">
+                  <p className="text-sm text-blue-700">
+                    <strong>Thank You!</strong> We're grateful to all the students, parents, and volunteers who made
+                    this camp a huge success. Stay tuned for future programs!
+                  </p>
                 </div>
               </div>
             </div>
@@ -261,29 +223,25 @@ export default function SummerSTEMCamp2025() {
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-700 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Join Our STEM Adventure?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Interested in Future Programs?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Spaces are limited and filling up fast. Register today to secure your spot in our exciting Summer STEM Camp 2025!
+            While this camp has ended, we're always planning new STEM experiences! Contact us to stay updated on
+            upcoming programs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/register">
+            <Link href="/contact">
               <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6">
-                Register Now <ArrowRight className="ml-2 h-5 w-5" />
+                Contact Us for Updates
               </Button>
             </Link>
-            <Link href="/global/about">
+            <Link href="/events">
               <Button
                 size="lg"
                 variant="outline"
                 className="border-white text-black hover:bg-white hover:text-blue-600 font-bold text-lg px-8 py-6 bg-transparent"
               >
-                Partner with us - Globally <Globe className="ml-2 h-5 w-5" />
+                View Other Events
               </Button>
-            </Link>
-          </div>
-          <div className="mt-6">
-            <Link href="/contact" className="text-white hover:text-yellow-400 underline">
-              Have questions? Contact us here
             </Link>
           </div>
         </div>

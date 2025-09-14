@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, MapPin, Calendar, Clock, Mail, Users } from "lucide-react"
+import { ArrowRight, MapPin, Calendar, Clock, Mail, Users } from 'lucide-react'
 
 export default function GlobalAfrica() {
   return (
@@ -181,15 +181,16 @@ export default function GlobalAfrica() {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Environmental Science Projects</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Science & Engineering Projects</h3>
                 <p className="text-gray-700 mb-4">
-                  Hands-on projects addressing local environmental challenges like water purification, sustainable
-                  energy, and conservation efforts.
+                  Hands-on projects addressing local challenges including chemistry experiments and engineering challenges
+                  like bridge building and structural design.
                 </p>
                 <ul className="text-gray-700 space-y-2">
                   <li>• Devils Toothpaste (elephant toothpaste)</li>
                   <li>• Cabbage ph indicator</li>
-                  <li>• Inflatable balloon</li>
+                  <li>• Bridge building challenge</li>
+                  <li>• Inflatable balloon experiment</li>
                 </ul>
               </div>
             </div>
