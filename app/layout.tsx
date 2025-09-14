@@ -1,10 +1,12 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import { Suspense } from "react"
 import "./globals.css"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { ThemeProvider } from "@/components/theme-provider"
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -28,11 +30,16 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light">
           <div className="flex min-h-screen flex-col">
-            <Header />
+            <Suspense fallback={<div>Loading...</div>}>
+              <Header />
+            </Suspense>
             <div className="flex-grow">{children}</div>
-            <Footer />
+            <Suspense fallback={<div>Loading...</div>}>
+              <Footer />
+            </Suspense>
           </div>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
