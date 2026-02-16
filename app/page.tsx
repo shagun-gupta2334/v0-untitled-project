@@ -68,42 +68,6 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Africa Global Camp */}
-            <div className="bg-gradient-to-br from-green-50 to-yellow-50 rounded-lg shadow-lg overflow-hidden border-2 border-green-200">
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-4">
-                  <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">Global</span>
-                  <span className="text-green-600 font-bold">FREE</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Global Camp - Africa</h3>
-                <p className="text-gray-700 mb-4">
-                  Virtual STEM camp for students across Africa, featuring hands-on experiments and coding activities
-                  delivered online.
-                </p>
-                <div className="space-y-2 text-sm text-gray-600 mb-4">
-                  <div className="flex items-center">
-                    <span className="font-medium mr-2">📅</span>
-                    <span>September 20, 2025</span>
-                  </div>
-                  <div className="flex items-center">
-                    <span className="font-medium mr-2">🕐</span>
-                    <span>8:00 AM - 12:00 PM EST</span>
-                  </div>
-                  <div className="flex items-center">
-                    <span className="font-medium mr-2">🌐</span>
-                    <span>Online via Google Meet</span>
-                  </div>
-                  <div className="flex items-center">
-                    <span className="font-medium mr-2">👥</span>
-                    <span>Ages 8-14</span>
-                  </div>
-                </div>
-                <Link href="/events/global-africa-camp">
-                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white">Learn More & Register</Button>
-                </Link>
-              </div>
-            </div>
-
             {/* Add New Event Placeholder */}
             <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg shadow-lg overflow-hidden border-2 border-dashed border-gray-300">
               <div className="p-6 text-center">
