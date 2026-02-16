@@ -23,13 +23,16 @@ export default function GlobalAfricaCamp() {
               <div>
                 <div className="flex items-center mb-4">
                   <span className="bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-bold mr-4">
+                    COMPLETED
+                  </span>
+                  <span className="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm font-bold">
                     GLOBAL EVENT
                   </span>
                 </div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">Global Camp - Africa</h1>
                 <p className="text-xl opacity-90 mb-6">
-                  Join us for our virtual STEM camp designed specifically for students across Africa! Experience
-                  hands-on learning through online activities and connect with fellow young scientists from across the
+                  Our virtual STEM camp for students across Africa was a great success! Students experienced
+                  hands-on learning through online activities and connected with fellow young scientists from across the
                   continent.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -210,56 +213,107 @@ export default function GlobalAfricaCamp() {
         </div>
       </section>
 
-      {/* Registration Information */}
+      {/* Photo Gallery */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">How to Participate</h2>
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Camp Highlights</h2>
+              <div className="w-24 h-1 bg-green-500 mx-auto mb-6"></div>
+              <p className="text-lg text-gray-700">
+                Photos from our successful Africa STEM camp, in partnership with Africa ICT Rights.
+              </p>
+            </div>
 
-            <div className="bg-green-50 rounded-lg shadow-md p-8">
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Registration Process</h3>
-                <p className="text-lg text-gray-700">
-                  Invitations will be sent out to students who have been scheduled with us through our partner
-                  organization, Africa ICT Rights.
-                </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="/images/africa-camp-virtual.jpg"
+                  alt="Students watching a virtual presentation from Spark for STEM instructor"
+                  width={600}
+                  height={400}
+                  className="w-full h-64 object-cover"
+                />
+                <div className="p-4 bg-white">
+                  <p className="text-sm text-gray-700 font-medium">Virtual presentation by Spark for STEM team</p>
+                </div>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-4">For Students & Families</h4>
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                      <span>All activities use common household items</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                      <span>Materials list provided in advance</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                      <span>English instruction with translation support</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                      <span>Interactive online format</span>
-                    </li>
-                  </ul>
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="/images/africa-camp-coding.jpg"
+                  alt="Students learning Python coding through a virtual session"
+                  width={600}
+                  height={400}
+                  className="w-full h-64 object-cover"
+                />
+                <div className="p-4 bg-white">
+                  <p className="text-sm text-gray-700 font-medium">Python coding lesson delivered virtually</p>
                 </div>
+              </div>
 
-                <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-4">Contact Information</h4>
-                  <p className="text-gray-700 mb-4">
-                    If you're interested in participating or have questions about the program, please reach out to us.
-                  </p>
-                  <a
-                    href="mailto:Sparkforstem@gmail.com?subject=Interest in Africa Global Camp"
-                    className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
-                  >
-                    <Mail className="mr-2 h-5 w-5" />
-                    Express Interest
-                  </a>
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="/images/africa-camp-demo.jpg"
+                  alt="Students watching a chemistry demonstration via video call"
+                  width={600}
+                  height={400}
+                  className="w-full h-64 object-cover"
+                />
+                <div className="p-4 bg-white">
+                  <p className="text-sm text-gray-700 font-medium">Live chemistry demonstration via Google Meet</p>
+                </div>
+              </div>
+
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="/images/africa-camp-experiment.jpg"
+                  alt="Students doing hands-on chemistry experiments with safety gear"
+                  width={600}
+                  height={400}
+                  className="w-full h-64 object-cover"
+                />
+                <div className="p-4 bg-white">
+                  <p className="text-sm text-gray-700 font-medium">Hands-on chemistry experiments</p>
+                </div>
+              </div>
+
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="/images/africa-camp-science.jpg"
+                  alt="Students conducting science experiments with safety goggles and gloves"
+                  width={600}
+                  height={400}
+                  className="w-full h-64 object-cover"
+                />
+                <div className="p-4 bg-white">
+                  <p className="text-sm text-gray-700 font-medium">Science experiments with proper safety equipment</p>
+                </div>
+              </div>
+
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="/images/africa-camp-students.jpg"
+                  alt="Students collaborating on engineering design projects"
+                  width={600}
+                  height={400}
+                  className="w-full h-64 object-cover"
+                />
+                <div className="p-4 bg-white">
+                  <p className="text-sm text-gray-700 font-medium">Collaborative engineering design projects</p>
+                </div>
+              </div>
+
+              <div className="rounded-lg overflow-hidden shadow-lg md:col-span-2 lg:col-span-3">
+                <Image
+                  src="/images/africa-camp-classroom.jpg"
+                  alt="Students in a classroom with science equipment during a STEM lesson"
+                  width={1200}
+                  height={400}
+                  className="w-full h-80 object-cover"
+                />
+                <div className="p-4 bg-white">
+                  <p className="text-sm text-gray-700 font-medium">Students engaged during hands-on STEM activities</p>
                 </div>
               </div>
             </div>
