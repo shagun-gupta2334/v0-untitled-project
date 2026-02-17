@@ -64,6 +64,22 @@ export default function Contact() {
                     </a>
                   </div>
                 </div>
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <TikTok className="h-6 w-6 text-blue-600" />
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-lg font-medium text-gray-900">Tiktok</h3>
+                    <a
+                      href="https://www.tiktok.com/@spark.for.stem"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:underline"
+                    >
+                      @spark.for.stem
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
