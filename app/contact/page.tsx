@@ -90,6 +90,17 @@ export default function Contact() {
                     Follow us on Instagram
                   </a>
                 </div>
+                <div className="flex flex-col space-y-4">
+                  <a
+                    href="https://www.tiktok.com/@spark.for.stem"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
+                  >
+                    <TikTok className="mr-2 h-5 w-5" />
+                    Follow us on TikTok!
+                  </a>
+                </div>
               </div>
             </div>
           </div>
