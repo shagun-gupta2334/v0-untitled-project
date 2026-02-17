@@ -106,6 +106,17 @@ export default function Contact() {
                     Follow us on Instagram
                   </a>
                 </div>
+                <div className="flex flex-col space-y-4">
+                  <a
+                    href="https://www.tiktok.com/@spark.for.stem"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
+                  >
+                    <Tiktok className="mr-2 h-5 w-5" />
+                    Follow us on TikTok
+                  </a>
+                </div>
                 </div>
               </div>
             </div>
@@ -123,7 +134,7 @@ export default function Contact() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">How can I stay updated about upcoming events?</h3>
                 <p className="text-gray-700">
-                  Follow us on Instagram @sparkforstem or email us to be added to our updates list. We announce new
+                  Follow us on Instagram @sparkforstem, Tiktok @spark.for.stem or email us to be added to our updates list. We announce new
                   programs and events regularly.
                 </p>
               </div>
