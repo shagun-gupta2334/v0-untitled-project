@@ -64,6 +64,22 @@ export default function Contact() {
                     </a>
                   </div>
                 </div>
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <svg className="h-6 w-6 text-blue-600" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.87a8.16 8.16 0 0 0 4.76 1.52v-3.4a4.85 4.85 0 0 1-1-.3z"/></svg>
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-lg font-medium text-gray-900">Tiktok</h3>
+                    <a
+                      href="https://www.tiktok.com/@spark.for.stem"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:underline"
+                    >
+                      @spark.for.stem
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -90,7 +106,19 @@ export default function Contact() {
                     Follow us on Instagram
                   </a>
                 </div>
+                <div className="flex flex-col space-y-4">
+                  <a
+                    href="https://www.tiktok.com/@spark.for.stem"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
+                  >
+                    <svg className="mr-2 h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.87a8.16 8.16 0 0 0 4.76 1.52v-3.4a4.85 4.85 0 0 1-1-.3z"/></svg>
+                    Follow us on TikTok
+                  </a>
+                </div>
               </div>
+            </div>
             </div>
           </div>
         </div>
@@ -106,7 +134,7 @@ export default function Contact() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">How can I stay updated about upcoming events?</h3>
                 <p className="text-gray-700">
-                  Follow us on Instagram @sparkforstem or email us to be added to our updates list. We announce new
+                  Follow us on Instagram @sparkforstem, Tiktok @spark.for.stem or email us to be added to our updates list. We announce new
                   programs and events regularly.
                 </p>
               </div>
