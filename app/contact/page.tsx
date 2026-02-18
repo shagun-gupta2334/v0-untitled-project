@@ -117,8 +117,8 @@ export default function Contact() {
                     Follow us on TikTok
                   </a>
                 </div>
-                </div>
               </div>
+            </div>
             </div>
           </div>
         </div>
@@ -244,6 +244,7 @@ export default function Contact() {
                       Apply to Volunteer
                     </a>
                     <p className="text-sm text-gray-600 mt-3">Application deadline: Before each program starts</p>
+                  </div>
                 </div>
               </div>
             </div>
